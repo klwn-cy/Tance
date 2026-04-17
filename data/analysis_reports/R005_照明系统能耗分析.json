@@ -1,0 +1,96 @@
+{
+  "report_id": "R005",
+  "title": "照明系统能耗与节能潜力分析",
+  "date": "2016-08-05",
+  "data_source": "CBECS 2012 (2012_public_use_data_aug2016.csv)",
+  "summary": "分析商业建筑照明系统的能耗构成和节能改造潜力。",
+  "key_findings": [
+    {
+      "finding": "照明能耗占比",
+      "value": "总用电量的15-25%",
+      "description": "照明是商业建筑第二大用电项，仅次于暖通空调"
+    },
+    {
+      "finding": "主要灯具类型",
+      "value": "荧光灯为主",
+      "description": "2012年数据中，荧光灯仍是主流，LED正在快速增长"
+    },
+    {
+      "finding": "节能潜力",
+      "value": "30-60%",
+      "description": "通过LED替换和智能控制可实现30-60%的照明节能"
+    },
+    {
+      "finding": "控制策略",
+      "value": "占用感应+日光调光",
+      "description": "结合占用感应和日光采集的智能控制效果最佳"
+    }
+  ],
+  "lighting_technology_distribution": {
+    "fluorescent": {
+      "share_2012": "~60%",
+      "efficiency": "60-100 lm/W",
+      "typical_application": "办公、商业"
+    },
+    "incandescent": {
+      "share_2012": "~15%",
+      "efficiency": "10-17 lm/W",
+      "typical_application": "装饰、零售"
+    },
+    "halogen": {
+      "share_2012": "~10%",
+      "efficiency": "15-25 lm/W",
+      "typical_application": "展示、重点照明"
+    },
+    "hid": {
+      "share_2012": "~10%",
+      "efficiency": "60-100 lm/W",
+      "typical_application": "仓库、体育馆"
+    },
+    "led": {
+      "share_2012": "~5%",
+      "efficiency": "80-150 lm/W",
+      "typical_application": "快速增长中"
+    }
+  },
+  "lighting_control_strategies": {
+    "occupancy_sensing": {
+      "savings": "20-30%",
+      "description": "占用感应控制"
+    },
+    "daylight_harvesting": {
+      "savings": "15-25%",
+      "description": "日光采集调光"
+    },
+    "scheduling": {
+      "savings": "10-20%",
+      "description": "定时控制"
+    },
+    "dimming": {
+      "savings": "10-15%",
+      "description": "手动/自动调光"
+    },
+    "combined_controls": {
+      "savings": "40-60%",
+      "description": "综合控制策略"
+    }
+  },
+  "retrofit_analysis": {
+    "led_replacement": {
+      "investment": "$2-5/sqft",
+      "payback": "2-4 years",
+      "energy_savings": "40-60%"
+    },
+    "control_upgrade": {
+      "investment": "$0.5-2/sqft",
+      "payback": "1-3 years",
+      "energy_savings": "20-40%"
+    }
+  },
+  "recommendations": [
+    "优先进行LED照明改造，投资回报期短",
+    "结合智能控制系统实现最大化节能",
+    "制定照明维护计划，保持灯具效率"
+  ],
+  "keywords": ["照明", "LED", "智能控制", "节能改造"]
+}

@@ -1,0 +1,85 @@
+2026-04-05 14:26:46 - energy_agent - INFO - [加载知识库]E:\环保智能体\data/knowledge\building_energy.txt内容加载成功
+2026-04-05 14:31:16 - energy_agent - INFO - 加载报告: R001
+2026-04-05 14:31:16 - energy_agent - INFO - 加载报告: R002
+2026-04-05 14:31:16 - energy_agent - INFO - 加载报告: R003
+2026-04-05 14:31:16 - energy_agent - INFO - 加载报告: R004
+2026-04-05 14:31:16 - energy_agent - INFO - 加载报告: R005
+2026-04-05 14:31:16 - energy_agent - INFO - 加载报告: R006
+2026-04-05 14:31:16 - energy_agent - INFO - 加载报告: R007
+2026-04-05 14:31:16 - energy_agent - INFO - 加载报告: R008
+2026-04-05 14:31:16 - energy_agent - INFO - 加载报告: R009
+2026-04-05 14:31:16 - energy_agent - INFO - 加载报告: R010
+2026-04-05 14:31:40 - energy_agent - INFO - [log_before_model]即将调用模型，带有1条消息。
+2026-04-05 14:31:42 - energy_agent - INFO - [tool monitor]执行工具：list_all_buildings
+2026-04-05 14:31:42 - energy_agent - INFO - [tool monitor]传入参数：{}
+2026-04-05 14:31:42 - energy_agent - INFO - [tool monitor]工具list_all_buildings调用成功
+2026-04-05 14:31:42 - energy_agent - INFO - [log_before_model]即将调用模型，带有3条消息。
+2026-04-05 14:31:47 - energy_agent - INFO - [tool monitor]执行工具：get_building_energy_data
+2026-04-05 14:31:47 - energy_agent - INFO - [tool monitor]传入参数：{'building_id': 'B001', 'time_range': '2024-01'}
+2026-04-05 14:31:47 - energy_agent - INFO - [tool monitor]工具get_building_energy_data调用成功
+2026-04-05 14:31:47 - energy_agent - INFO - [log_before_model]即将调用模型，带有5条消息。
+2026-04-05 14:31:51 - energy_agent - INFO - [tool monitor]执行工具：get_weather
+2026-04-05 14:31:51 - energy_agent - INFO - [tool monitor]传入参数：{'city': '北京'}
+2026-04-05 14:31:52 - energy_agent - INFO - [tool monitor]工具get_weather调用成功
+2026-04-05 14:31:52 - energy_agent - INFO - [log_before_model]即将调用模型，带有7条消息。
+2026-04-05 14:31:55 - energy_agent - INFO - [tool monitor]执行工具：get_current_datetime
+2026-04-05 14:31:55 - energy_agent - INFO - [tool monitor]传入参数：{}
+2026-04-05 14:31:55 - energy_agent - INFO - [tool monitor]工具get_current_datetime调用成功
+2026-04-05 14:31:55 - energy_agent - INFO - [log_before_model]即将调用模型，带有9条消息。
+2026-04-05 14:31:58 - energy_agent - INFO - [tool monitor]执行工具：get_building_energy_data
+2026-04-05 14:31:58 - energy_agent - INFO - [tool monitor]传入参数：{'building_id': 'B001', 'time_range': '2026-03'}
+2026-04-05 14:31:58 - energy_agent - INFO - [tool monitor]工具get_building_energy_data调用成功
+2026-04-05 14:31:58 - energy_agent - INFO - [log_before_model]即将调用模型，带有11条消息。
+2026-04-05 14:32:02 - energy_agent - INFO - [tool monitor]执行工具：get_building_energy_data
+2026-04-05 14:32:02 - energy_agent - INFO - [tool monitor]传入参数：{'building_id': 'B001', 'time_range': '2024-03'}
+2026-04-05 14:32:02 - energy_agent - INFO - [tool monitor]工具get_building_energy_data调用成功
+2026-04-05 14:32:02 - energy_agent - INFO - [log_before_model]即将调用模型，带有13条消息。
+2026-04-05 14:32:07 - energy_agent - INFO - [tool monitor]执行工具：generate_energy_strategy
+2026-04-05 14:32:07 - energy_agent - INFO - [tool monitor]传入参数：{'building_type': '教育建筑', 'energy_issue': '冬季供暖能耗高（1月用气12,000m³），全年用电强度偏高（68kWh/m²/年），需优化空调系统运行、照明管理和设备能效'}
+2026-04-05 14:32:07 - energy_agent - INFO - [tool monitor]工具generate_energy_strategy调用成功
+2026-04-05 14:32:07 - energy_agent - INFO - [log_before_model]即将调用模型，带有15条消息。
+2026-04-05 14:45:26 - energy_agent - INFO - [log_before_model]即将调用模型，带有1条消息。
+2026-04-05 14:45:28 - energy_agent - INFO - [tool monitor]执行工具：list_analysis_reports
+2026-04-05 14:45:28 - energy_agent - INFO - [tool monitor]传入参数：{}
+2026-04-05 14:45:28 - energy_agent - INFO - 加载报告: R001
+2026-04-05 14:45:28 - energy_agent - INFO - 加载报告: R002
+2026-04-05 14:45:28 - energy_agent - INFO - 加载报告: R003
+2026-04-05 14:45:28 - energy_agent - INFO - 加载报告: R004
+2026-04-05 14:45:28 - energy_agent - INFO - 加载报告: R005
+2026-04-05 14:45:28 - energy_agent - INFO - 加载报告: R006
+2026-04-05 14:45:28 - energy_agent - INFO - 加载报告: R007
+2026-04-05 14:45:28 - energy_agent - INFO - 加载报告: R008
+2026-04-05 14:45:28 - energy_agent - INFO - 加载报告: R009
+2026-04-05 14:45:28 - energy_agent - INFO - 加载报告: R010
+2026-04-05 14:45:28 - energy_agent - INFO - [tool monitor]工具list_analysis_reports调用成功
+2026-04-05 14:45:28 - energy_agent - INFO - [log_before_model]即将调用模型，带有3条消息。
+2026-04-05 16:11:16 - energy_agent - INFO - 加载报告: R001
+2026-04-05 16:11:16 - energy_agent - INFO - 加载报告: R002
+2026-04-05 16:11:16 - energy_agent - INFO - 加载报告: R003
+2026-04-05 16:11:16 - energy_agent - INFO - 加载报告: R004
+2026-04-05 16:11:16 - energy_agent - INFO - 加载报告: R005
+2026-04-05 16:11:16 - energy_agent - INFO - 加载报告: R006
+2026-04-05 16:11:16 - energy_agent - INFO - 加载报告: R007
+2026-04-05 16:11:16 - energy_agent - INFO - 加载报告: R008
+2026-04-05 16:11:16 - energy_agent - INFO - 加载报告: R009
+2026-04-05 16:11:16 - energy_agent - INFO - 加载报告: R010
+2026-04-05 18:49:27 - energy_agent - INFO - 加载报告: R001
+2026-04-05 18:49:27 - energy_agent - INFO - 加载报告: R002
+2026-04-05 18:49:27 - energy_agent - INFO - 加载报告: R003
+2026-04-05 18:49:27 - energy_agent - INFO - 加载报告: R004
+2026-04-05 18:49:27 - energy_agent - INFO - 加载报告: R005
+2026-04-05 18:49:27 - energy_agent - INFO - 加载报告: R006
+2026-04-05 18:49:27 - energy_agent - INFO - 加载报告: R007
+2026-04-05 18:49:27 - energy_agent - INFO - 加载报告: R008
+2026-04-05 18:49:27 - energy_agent - INFO - 加载报告: R009
+2026-04-05 18:49:27 - energy_agent - INFO - 加载报告: R010
+2026-04-05 22:11:20 - energy_agent - INFO - 加载报告: R001
+2026-04-05 22:11:20 - energy_agent - INFO - 加载报告: R002
+2026-04-05 22:11:20 - energy_agent - INFO - 加载报告: R003
+2026-04-05 22:11:20 - energy_agent - INFO - 加载报告: R004
+2026-04-05 22:11:20 - energy_agent - INFO - 加载报告: R005
+2026-04-05 22:11:20 - energy_agent - INFO - 加载报告: R006
+2026-04-05 22:11:20 - energy_agent - INFO - 加载报告: R007
+2026-04-05 22:11:20 - energy_agent - INFO - 加载报告: R008
+2026-04-05 22:11:20 - energy_agent - INFO - 加载报告: R009
+2026-04-05 22:11:20 - energy_agent - INFO - 加载报告: R010

@@ -1,0 +1,84 @@
+{
+  "report_id": "R003",
+  "title": "供暖系统能耗分析",
+  "date": "2016-08-03",
+  "data_source": "CBECS 2012 (2012_public_use_data_aug2016.csv)",
+  "summary": "深入分析商业建筑供暖系统的能源使用情况和效率。",
+  "key_findings": [
+    {
+      "finding": "主要供暖方式",
+      "value": "天然气锅炉/炉具",
+      "description": "天然气是最主要的供暖能源，占比超过50%"
+    },
+    {
+      "finding": "电供暖",
+      "value": "热泵系统",
+      "description": "热泵系统在温和气候区应用广泛，效率较高"
+    },
+    {
+      "finding": "区域供暖",
+      "value": "蒸汽/热水",
+      "description": "大型建筑群和城市中心区域采用集中供热系统"
+    },
+    {
+      "finding": "供暖能耗占比",
+      "value": "总能耗的20-40%",
+      "description": "供暖能耗在寒冷地区可占总能耗的40%以上"
+    }
+  ],
+  "heating_system_types": {
+    "natural_gas_furnace": {
+      "description": "天然气炉具",
+      "efficiency": "78-95%",
+      "market_share": "~45%"
+    },
+    "boiler": {
+      "description": "锅炉系统",
+      "efficiency": "80-90%",
+      "market_share": "~25%"
+    },
+    "heat_pump": {
+      "description": "热泵系统",
+      "efficiency": "COP 2.5-4.0",
+      "market_share": "~15%"
+    },
+    "district_heating": {
+      "description": "区域供热",
+      "efficiency": " varies",
+      "market_share": "~10%"
+    },
+    "electric_resistance": {
+      "description": "电阻加热",
+      "efficiency": "95-100%",
+      "market_share": "~5%"
+    }
+  },
+  "regional_analysis": {
+    "northeast": {
+      "heating_degree_days": "5000-7000",
+      "primary_fuel": "天然气、燃油",
+      "heating_eui": "最高"
+    },
+    "midwest": {
+      "heating_degree_days": "5000-8000",
+      "primary_fuel": "天然气",
+      "heating_eui": "高"
+    },
+    "south": {
+      "heating_degree_days": "1000-3000",
+      "primary_fuel": "电力、天然气",
+      "heating_eui": "低"
+    },
+    "west": {
+      "heating_degree_days": "2000-4000",
+      "primary_fuel": "天然气",
+      "heating_eui": "中等"
+    }
+  },
+  "recommendations": [
+    "推广高效冷凝式锅炉，效率可达95%以上",
+    "在温和气候区推广空气源热泵",
+    "加强建筑保温，减少供暖负荷"
+  ],
+  "keywords": ["供暖系统", "天然气", "热泵", "区域供热"]
+}

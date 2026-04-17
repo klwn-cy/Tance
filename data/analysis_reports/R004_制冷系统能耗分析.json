@@ -1,0 +1,74 @@
+{
+  "report_id": "R004",
+  "title": "制冷系统能耗分析",
+  "date": "2016-08-04",
+  "data_source": "CBECS 2012 (2012_public_use_data_aug2016.csv)",
+  "summary": "分析商业建筑制冷空调系统的能耗特征和效率。",
+  "key_findings": [
+    {
+      "finding": "主要制冷方式",
+      "value": "中央空调系统",
+      "description": "大型建筑普遍采用中央空调系统，包括冷水机组和空气处理机组"
+    },
+    {
+      "finding": "小型建筑",
+      "value": "分体式/窗式空调",
+      "description": "小型商业建筑多采用分体空调或窗式空调"
+    },
+    {
+      "finding": "制冷能耗占比",
+      "value": "总能耗的15-30%",
+      "description": "制冷能耗在炎热地区可占总能耗的30%以上"
+    },
+    {
+      "finding": "能效提升",
+      "value": "变频技术",
+      "description": "变频空调和VRF系统可显著提高部分负荷效率"
+    }
+  ],
+  "cooling_system_types": {
+    "central_chiller": {
+      "description": "中央冷水机组",
+      "typical_capacity": "100-1000+ tons",
+      "efficiency": "COP 4.0-6.0",
+      "suitable_for": "大型商业建筑"
+    },
+    " packaged_units": {
+      "description": "组合式空调机组",
+      "typical_capacity": "5-100 tons",
+      "efficiency": "SEER 10-18",
+      "suitable_for": "中小型建筑"
+    },
+    "split_system": {
+      "description": "分体空调系统",
+      "typical_capacity": "1-10 tons",
+      "efficiency": "SEER 13-25",
+      "suitable_for": "小型商业建筑"
+    },
+    "vrf_system": {
+      "description": "变频多联机系统",
+      "typical_capacity": "3-50 tons",
+      "efficiency": "IPLV 15-25",
+      "suitable_for": "多区域建筑"
+    },
+    "evaporative_cooling": {
+      "description": "蒸发冷却",
+      "typical_capacity": "varies",
+      "efficiency": "高（干燥气候）",
+      "suitable_for": "干燥气候区"
+    }
+  },
+  "cooling_energy_factors": [
+    "气候条件（制冷度日数CDD）",
+    "建筑朝向和窗户面积",
+    "内部热负荷（人员、设备）",
+    "空调运行时间和温度设定",
+    "设备效率和维护状况"
+  ],
+  "recommendations": [
+    "推广高效冷水机组（磁悬浮、变频）",
+    "采用变频VRF系统提高部分负荷效率",
+    "实施免费冷却策略（在适宜气候条件下）"
+  ],
+  "keywords": ["制冷系统", "空调", "冷水机组", "VRF"]
+}

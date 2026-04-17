@@ -1,0 +1,87 @@
+{
+  "report_id": "R009",
+  "title": "建筑能耗管理系统(EMCS)应用分析",
+  "date": "2016-08-09",
+  "data_source": "CBECS 2012 (2012_public_use_data_aug2016.csv)",
+  "summary": "分析建筑能源管理与控制系统(EMCS)的应用现状和节能效果。",
+  "key_findings": [
+    {
+      "finding": "EMCS普及率",
+      "value": "约35-40%",
+      "description": "2012年数据显示，约35-40%的大型商业建筑安装了EMCS系统"
+    },
+    {
+      "finding": "节能效果",
+      "value": "10-30%",
+      "description": "安装EMCS的建筑平均可实现10-30%的能耗节约"
+    },
+    {
+      "finding": "大型建筑",
+      "value": "应用更广泛",
+      "description": "面积>50,000 sqft的建筑EMCS安装率超过60%"
+    },
+    {
+      "finding": "功能差异",
+      "value": "从简单到复杂",
+      "description": "EMCS功能从简单定时控制到综合能源管理差异很大"
+    }
+  ],
+  "emcs_functions": {
+    "scheduling": {
+      "description": "定时控制",
+      "savings": "5-15%",
+      "implementation": "基础功能，广泛采用"
+    },
+    "occupancy_control": {
+      "description": "占用感应控制",
+      "savings": "10-20%",
+      "implementation": "中等普及"
+    },
+    "demand_control": {
+      "description": "需求控制通风",
+      "savings": "5-10%",
+      "implementation": "新建筑常见"
+    },
+    "optimal_start_stop": {
+      "description": "最优启停控制",
+      "savings": "5-10%",
+      "implementation": "高级功能"
+    },
+    "energy_monitoring": {
+      "description": "能耗监测分析",
+      "savings": "5-15%",
+      "implementation": "增长中"
+    },
+    "fault_detection": {
+      "description": "故障检测诊断",
+      "savings": "10-20%",
+      "implementation": "较新功能"
+    }
+  },
+  "emcs_adoption_by_building_type": {
+    "office": "55%",
+    "education": "45%",
+    "healthcare": "65%",
+    "retail": "30%",
+    "lodging": "40%",
+    "warehouse": "20%"
+  },
+  "emcs_adoption_by_size": {
+    "small": "15%",
+    "medium": "35%",
+    "large": "60%",
+    "very_large": "80%"
+  },
+  "implementation_challenges": [
+    "初始投资成本",
+    "系统复杂性和维护需求",
+    "操作人员培训",
+    "与现有系统集成"
+  ],
+  "recommendations": [
+    "推广EMCS在中型建筑中的应用",
+    "加强操作人员培训",
+    "利用云计算降低系统复杂度"
+  ],
+  "keywords": ["EMCS", "能源管理", "自动控制", "智能建筑"]
+}

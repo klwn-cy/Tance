@@ -1,0 +1,45 @@
+{
+  "report_id": "R002",
+  "title": "不同建筑类型能耗强度对比分析",
+  "date": "2016-08-02",
+  "data_source": "CBECS 2012 (2012_public_use_data_aug2016.csv)",
+  "summary": "分析不同建筑类型（办公楼、零售店、学校、医院等）的能耗强度(EUI)差异。",
+  "key_findings": [
+    {
+      "finding": "能耗强度最高",
+      "value": "餐饮类建筑",
+      "description": "餐饮建筑由于烹饪设备和长运营时间，能耗强度最高，EUI可达300+ kBtu/sqft"
+    },
+    {
+      "finding": "能耗强度最低",
+      "value": "仓储类建筑",
+      "description": "仓库和存储设施能耗强度最低，主要能耗来自照明"
+    },
+    {
+      "finding": "办公建筑",
+      "value": "中等能耗强度",
+      "description": "办公楼能耗强度处于中等水平，EUI约75-100 kBtu/sqft"
+    },
+    {
+      "finding": "医疗建筑",
+      "value": "高能耗强度",
+      "description": "医院和诊所由于24小时运营和特殊设备需求，能耗强度较高"
+    }
+  ],
+  "building_type_eui_ranking": [
+    {"rank": 1, "type": "餐饮服务", "eui_range": "250-400 kBtu/sqft", "main_drivers": "烹饪设备、制冷"},
+    {"rank": 2, "type": "医疗保健", "eui_range": "200-300 kBtu/sqft", "main_drivers": "24小时运营、医疗设备"},
+    {"rank": 3, "type": "食品销售", "eui_range": "150-250 kBtu/sqft", "main_drivers": "冷藏展示柜"},
+    {"rank": 4, "type": "住宿服务", "eui_range": "100-150 kBtu/sqft", "main_drivers": "热水、空调"},
+    {"rank": 5, "type": "教育建筑", "eui_range": "60-100 kBtu/sqft", "main_drivers": "照明、供暖"},
+    {"rank": 6, "type": "办公建筑", "eui_range": "75-100 kBtu/sqft", "main_drivers": "照明、IT设备"},
+    {"rank": 7, "type": "零售建筑", "eui_range": "50-80 kBtu/sqft", "main_drivers": "照明、空调"},
+    {"rank": 8, "type": "仓储建筑", "eui_range": "20-40 kBtu/sqft", "main_drivers": "照明"}
+  ],
+  "recommendations": [
+    "针对高能耗建筑类型（餐饮、医疗）优先实施节能改造",
+    "办公建筑可通过照明升级和行为管理降低能耗",
+    "建立建筑能耗基准线，便于对比分析"
+  ],
+  "keywords": ["建筑类型", "能耗强度", "EUI", "对比分析"]
+}

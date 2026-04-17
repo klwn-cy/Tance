@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>碳策Agent - 建筑节能减排智能体平台</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/chat.css">
+    <link rel="stylesheet" href="/static/css/building.css">
+    <link rel="stylesheet" href="/static/css/analysis.css">
+    <link rel="stylesheet" href="/static/css/carbon.css">
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+</head>
+<body>
+    <!-- ========== 头部导航 ========== -->
+    <header class="app-header">
+        <div class="header-brand">
+            <span class="icon">🌿</span>
+            <span>碳策Agent</span>
+        </div>
+        <nav class="header-nav">
+            <button class="nav-tab active" data-page="dashboard" onclick="switchPage('dashboard')">
+                <span>🏠</span>
+                <span class="nav-text">首页</span>
+            </button>
+            <button class="nav-tab" data-page="building" onclick="switchPage('building')">
+                <span>🏛️</span>
+                <span class="nav-text">建筑管理</span>
+            </button>
+            <button class="nav-tab" data-page="analysis" onclick="switchPage('analysis')">
+                <span>📊</span>
+                <span class="nav-text">数据分析</span>
+            </button>
+            <button class="nav-tab" data-page="carbon" onclick="switchPage('carbon')">
+                <span>🏭</span>
+                <span class="nav-text">碳排放监测</span>
+            </button>
+        </nav>
+        <div class="header-right">
+            <span style="font-size:0.8rem;opacity:0.7">v1.0</span>
+        </div>
+    </header>
+
+    <!-- ========== 主内容 ========== -->
+    <main class="app-content">
+
+        <!-- ========== 页面1：驾驶舱首页 ========== -->
+        <div id="page-dashboard" class="page active">
+            <!-- 标题区 -->
+            <div class="dashboard-header">
+                <div class="dashboard-title">碳策通</div>
+                <div class="dashboard-subtitle">Building Energy Saving & Emission Reduction Dashboard</div>
+            </div>
+
+            <!-- 统计卡片 -->
+            <div class="dashboard-stats">
+                <div class="dash-stat-card">
+                    <div class="dash-stat-value" id="dashBuildingCount">--</div>
+                    <div class="dash-stat-label">管理建筑总数</div>
+                    <div class="dash-stat-unit">栋</div>
+                </div>
+                <div class="dash-stat-card">
+                    <div class="dash-stat-value" id="dashTotalArea">--</div>
+                    <div class="dash-stat-label">建筑总面积</div>
+                    <div class="dash-stat-unit">万 m²</div>
+                </div>
+                <div class="dash-stat-card">
+                    <div class="dash-stat-value" id="dashTotalEnergy">--</div>
+                    <div class="dash-stat-label">年度总能耗</div>
+                    <div class="dash-stat-unit">万 kWh</div>
+                </div>
+                <div class="dash-stat-card">
+                    <div class="dash-stat-value" id="dashTotalCarbon">--</div>
+                    <div class="dash-stat-label">年度碳排放</div>
+                    <div class="dash-stat-unit">tCO₂</div>
+                </div>
+                <div class="dash-stat-card">
+                    <div class="dash-stat-value" id="dashAvgEUI">--</div>
+                    <div class="dash-stat-label">平均能耗强度</div>
+                    <div class="dash-stat-unit">kWh/m²</div>
+                </div>
+                <div class="dash-stat-card">
+                    <div class="dash-stat-value" id="dashSavingRate">--</div>
+                    <div class="dash-stat-label">节能达标率</div>
+                    <div class="dash-stat-unit">%</div>
+                </div>
+            </div>
+
+            <!-- 功能卡片 -->
+            <div class="dashboard-functions">
+                <div class="dash-func-card func-building" onclick="switchPage('building')">
+                    <div class="dash-func-icon">🏛️</div>
+                    <div class="dash-func-label">建筑管理</div>
+                </div>
+                <div class="dash-func-card func-energy" onclick="switchPage('building'); setTimeout(()=>switchBuildingTab('building-energy'), 100)">
+                    <div class="dash-func-icon">⚡</div>
+                    <div class="dash-func-label">能耗数据</div>
+                </div>
+                <div class="dash-func-card func-analysis" onclick="switchPage('analysis')">
+                    <div class="dash-func-icon">📊</div>
+                    <div class="dash-func-label">数据分析</div>
+                </div>
+                <div class="dash-func-card func-cbecs" onclick="switchPage('analysis'); setTimeout(()=>switchAnalysisTab('analysis-cbecs'), 100)">
+                    <div class="dash-func-icon">📈</div>
+                    <div class="dash-func-label">CBECS基准</div>
+                </div>
+                <div class="dash-func-card func-carbon" onclick="switchPage('carbon')">
+                    <div class="dash-func-icon">🏭</div>
+                    <div class="dash-func-label">碳排放监测</div>
+                </div>
+                <div class="dash-func-card func-report" onclick="switchPage('analysis'); setTimeout(()=>switchAnalysisTab('analysis-report'), 100)">
+                    <div class="dash-func-icon">📄</div>
+                    <div class="dash-func-label">报告生成</div>
+                </div>
+                <div class="dash-func-card func-chat" onclick="toggleChatWidget()">
+                    <div class="dash-func-icon">💬</div>
+                    <div class="dash-func-label">智能对话</div>
+                </div>
+            </div>
+
+            <!-- 底部信息 -->
+            <div class="dashboard-footer">
+                <span>碳策Agent v1.0 - 建筑节能减排智能体平台</span>
+                <span id="dashboardClock"></span>
+                <span>数据来源：<a href="https://carbonmonitor.org" target="_blank">Carbon Monitor</a> | CBECS 2012</span>
+            </div>
+        </div>
+
+        <!-- ========== 页面2：建筑管理 ========== -->
+        <div id="page-building" class="page">
+            <div class="page-header">
+                <h1>🏛️ 建筑管理</h1>
+                <p>管理建筑信息、录入能耗数据、进行建筑数据的增删改查操作</p>
+            </div>
+            <!-- 子Tab -->
+            <div class="tab-bar">
+                <button class="tab-item active" data-tab="building-list" onclick="switchBuildingTab('building-list')">📋 建筑列表</button>
+                <button class="tab-item" data-tab="building-add" onclick="switchBuildingTab('building-add')">➕ 添加建筑</button>
+                <button class="tab-item" data-tab="building-edit" onclick="switchBuildingTab('building-edit')">✏️ 编辑建筑</button>
+                <button class="tab-item" data-tab="building-energy" onclick="switchBuildingTab('building-energy')">⚡ 能耗数据</button>
+            </div>
+
+            <!-- 建筑列表 -->
+            <div id="tab-building-list" class="tab-content active">
+                <div class="filter-bar">
+                    <select class="form-select" id="filterType" onchange="loadBuildingList()">
+                        <option value="">所有类型</option>
+                    </select>
+                    <select class="form-select" id="filterRegion" onchange="loadBuildingList()">
+                        <option value="">所有地区</option>
+                    </select>
+                    <button class="btn btn-primary btn-sm" onclick="loadBuildingList()">🔍 查询</button>
+                    <button class="btn btn-outline btn-sm" onclick="resetBuildingFilters()">重置</button>
+                </div>
+                <div id="buildingListContainer">
+                    <!-- 动态填充 -->
+                </div>
+            </div>
+
+            <!-- 添加建筑 -->
+            <div id="tab-building-add" class="tab-content">
+                <div class="building-form-card">
+                    <div class="form-section">
+                        <div class="form-section-title">📝 基本信息</div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">建筑名称 *</label>
+                                <input class="form-input" id="addName" placeholder="输入建筑名称" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">建筑类型</label>
+                                <select class="form-select" id="addType"></select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">所在地区</label>
+                                <select class="form-select" id="addRegion"></select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">建筑面积 (m²)</label>
+                                <input class="form-input" id="addArea" type="number" min="0" value="1000">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">楼层数</label>
+                                <input class="form-input" id="addFloors" type="number" min="1" value="1">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">地下层数</label>
+                                <input class="form-input" id="addBasements" type="number" min="0" value="0">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">建造年份</label>
+                                <input class="form-input" id="addYear" type="number" min="1900" max="2026" value="2020">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">员工人数</label>
+                                <input class="form-input" id="addEmployees" type="number" min="0" value="0">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">每周运营时长 (h)</label>
+                                <input class="form-input" id="addHours" type="number" min="0" value="40">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <div class="form-section-title">🏗️ 建筑结构</div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">墙体结构</label>
+                                <select class="form-select" id="addWall"></select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">屋顶结构</label>
+                                <select class="form-select" id="addRoof"></select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">屋顶类型</label>
+                                <select class="form-select" id="addRoofType"></select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">建筑形状</label>
+                                <select class="form-select" id="addShape"></select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">玻璃占比 (%)</label>
+                                <input class="form-input" id="addGlass" type="number" min="0" max="100" value="30">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">层高 (m)</label>
+                                <input class="form-input" id="addCeiling" type="number" step="0.1" value="3.0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <div class="form-section-title">⚡ 能源系统</div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">供暖类型</label>
+                                <select class="form-select" id="addHeating"></select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">制冷类型</label>
+                                <select class="form-select" id="addCooling"></select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">热水类型</label>
+                                <select class="form-select" id="addWater"></select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label class="form-label" style="display:flex;align-items:center;gap:6px;">
+                                <input type="checkbox" id="addElec" checked> 使用电力
+                            </label>
+                            <label class="form-label" style="display:flex;align-items:center;gap:6px;">
+                                <input type="checkbox" id="addGas" checked> 使用天然气
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button class="btn btn-primary btn-lg" onclick="addBuilding()">➕ 创建建筑</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 编辑建筑 -->
+            <div id="tab-building-edit" class="tab-content">
+                <div class="filter-bar" style="margin-bottom:var(--spacing-md)">
+                    <select class="form-select" id="editBuildingSelect" onchange="loadBuildingForEdit()">
+                        <option value="">-- 选择要编辑的建筑 --</option>
+                    </select>
+                </div>
+                <div id="editFormContainer" class="hidden">
+                    <div class="building-form-card">
+                        <div class="form-section">
+                            <div class="form-section-title">📝 基本信息</div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">建筑名称</label>
+                                    <input class="form-input" id="editName">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">建筑类型</label>
+                                    <select class="form-select" id="editType"></select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">所在地区</label>
+                                    <select class="form-select" id="editRegion"></select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">建筑面积 (m²)</label>
+                                    <input class="form-input" id="editArea" type="number">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">楼层数</label>
+                                    <input class="form-input" id="editFloors" type="number">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">地下层数</label>
+                                    <input class="form-input" id="editBasements" type="number">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">建造年份</label>
+                                    <input class="form-input" id="editYear" type="number">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">员工人数</label>
+                                    <input class="form-input" id="editEmployees" type="number">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">每周运营时长 (h)</label>
+                                    <input class="form-input" id="editHours" type="number">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-section">
+                            <div class="form-section-title">🏗️ 建筑结构</div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">墙体结构</label>
+                                    <select class="form-select" id="editWall"></select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">屋顶结构</label>
+                                    <select class="form-select" id="editRoof"></select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">屋顶类型</label>
+                                    <select class="form-select" id="editRoofType"></select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">建筑形状</label>
+                                    <select class="form-select" id="editShape"></select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">玻璃占比 (%)</label>
+                                    <input class="form-input" id="editGlass" type="number">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">层高 (m)</label>
+                                    <input class="form-input" id="editCeiling" type="number" step="0.1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-section">
+                            <div class="form-section-title">⚡ 能源系统</div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">供暖类型</label>
+                                    <select class="form-select" id="editHeating"></select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">制冷类型</label>
+                                    <select class="form-select" id="editCooling"></select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">热水类型</label>
+                                    <select class="form-select" id="editWater"></select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="form-label" style="display:flex;align-items:center;gap:6px;">
+                                    <input type="checkbox" id="editElec"> 使用电力
+                                </label>
+                                <label class="form-label" style="display:flex;align-items:center;gap:6px;">
+                                    <input type="checkbox" id="editGas"> 使用天然气
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button class="btn btn-danger btn-sm" onclick="deleteBuildingConfirm()">🗑️ 删除建筑</button>
+                            <button class="btn btn-primary" onclick="updateBuilding()">💾 保存修改</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 能耗数据 -->
+            <div id="tab-building-energy" class="tab-content">
+                <div class="filter-bar">
+                    <select class="form-select" id="energyBuildingSelect" onchange="loadEnergyData()">
+                        <option value="">-- 选择建筑 --</option>
+                    </select>
+                </div>
+                <div id="energyDataContainer">
+                    <div class="empty-state">
+                        <div class="icon">⚡</div>
+                        <p>请选择建筑以查看或录入能耗数据</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 页面3：数据分析 ========== -->
+        <div id="page-analysis" class="page">
+            <div class="page-header">
+                <h1>📊 数据分析</h1>
+                <p>基于建筑管理数据和CBECS 2012调查数据的可视化分析与报告生成</p>
+            </div>
+            <!-- 子Tab -->
+            <div class="tab-bar">
+                <button class="tab-item active" data-tab="analysis-building" onclick="switchAnalysisTab('analysis-building')">🏛️ 建筑数据分析</button>
+                <button class="tab-item" data-tab="analysis-cbecs" onclick="switchAnalysisTab('analysis-cbecs')">📈 CBECS基准分析</button>
+                <button class="tab-item" data-tab="analysis-report" onclick="switchAnalysisTab('analysis-report')">📄 报告生成</button>
+            </div>
+
+            <!-- 建筑数据分析 -->
+            <div id="tab-analysis-building" class="tab-content active">
+                <div class="filter-bar">
+                    <div style="flex:1;display:flex;flex-wrap:wrap;gap:var(--spacing-sm);align-items:center;">
+                        <label class="form-label" style="margin:0">选择建筑：</label>
+                        <div id="analysisBuildingChips" class="building-selector">
+                            <!-- 动态填充 -->
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm" onclick="runBuildingAnalysis()">📊 开始分析</button>
+                </div>
+                <div id="buildingAnalysisResult">
+                    <div class="empty-state">
+                        <div class="icon">📊</div>
+                        <p>请选择建筑并点击「开始分析」</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CBECS基准分析 -->
+            <div id="tab-analysis-cbecs" class="tab-content">
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-value">6,720</div>
+                        <div class="metric-label">调查样本数</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">10</div>
+                        <div class="metric-label">分析报告数</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">4</div>
+                        <div class="metric-label">普查区域</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">12</div>
+                        <div class="metric-label">建筑类型</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">📋 CBECS分析报告</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="report-list" id="cbecsReportList">
+                            <!-- 动态填充 -->
+                        </div>
+                        <div id="cbecsReportDetail" class="hidden">
+                            <!-- 动态填充 -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-title">🏢 建筑类型能耗强度对比 (EUI)</div>
+                    <div class="chart-placeholder" id="cbecsEuiChart"></div>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-title">🔥 供暖系统能源构成</div>
+                    <div class="chart-placeholder" id="cbecsHeatingChart"></div>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-title">🌍 区域气候能耗特征</div>
+                    <div class="chart-placeholder" id="cbecsRegionalChart"></div>
+                </div>
+            </div>
+
+            <!-- 报告生成 -->
+            <div id="tab-analysis-report" class="tab-content">
+                <div class="report-form">
+                    <div class="form-section-title">📝 报告内容设置</div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">报告标题</label>
+                            <input class="form-input" id="reportTitle" value="建筑能耗分析报告">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">报告作者</label>
+                            <input class="form-input" id="reportAuthor" value="碳策通智能体分析服务">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">选择建筑（留空则分析全部）</label>
+                        <div id="reportBuildingChips" class="building-selector"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">报告内容</label>
+                        <div class="report-options">
+                            <label class="report-option"><input type="checkbox" id="rptOverview" checked> 建筑概览</label>
+                            <label class="report-option"><input type="checkbox" id="rptArea" checked> 面积分析</label>
+                            <label class="report-option"><input type="checkbox" id="rptType" checked> 类型分布</label>
+                            <label class="report-option"><input type="checkbox" id="rptEnergy" checked> 能耗分析</label>
+                            <label class="report-option"><input type="checkbox" id="rptEui" checked> EUI分析</label>
+                            <label class="report-option"><input type="checkbox" id="rptRec" checked> 智能建议</label>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button class="btn btn-primary btn-lg" id="generateReportBtn" onclick="generateReport()">📝 生成Word报告</button>
+                    </div>
+                </div>
+                <div id="reportProgress" class="hidden">
+                    <div class="report-progress">
+                        <div class="spinner spinner-lg"></div>
+                        <p>正在生成报告，请稍候...</p>
+                        <div class="progress-bar"><div class="progress-fill" style="width:60%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== 页面4：碳排放监测 ========== -->
+        <div id="page-carbon" class="page">
+            <!-- 筛选栏 -->
+            <div class="carbon-filter-bar">
+                <select class="form-select" id="carbonSectorFilter" onchange="onCarbonFilterChange()">
+                    <option value="">全部部门</option>
+                </select>
+                <select class="form-select" id="carbonYearFilter" onchange="onCarbonFilterChange()">
+                    <option value="">全部年份</option>
+                </select>
+                <button class="btn btn-primary btn-sm" onclick="onCarbonFilterChange()">📊 查询</button>
+                <button class="btn btn-outline btn-sm" onclick="refreshCarbonData()">🔄 刷新数据</button>
+            </div>
+
+            <!-- 加载指示器 -->
+            <div class="carbon-loading hidden" id="carbonLoading">
+                <span class="spinner"></span>
+                <span>正在加载中国碳排放数据...</span>
+            </div>
+
+            <!-- 汇总卡片 -->
+            <div class="carbon-summary-grid">
+                <div class="carbon-summary-card">
+                    <div class="carbon-summary-value">
+                        <span id="carbonTotalValue">--</span>
+                        <span class="carbon-summary-unit">MtCO₂</span>
+                    </div>
+                    <div class="carbon-summary-label">年度总排放量</div>
+                </div>
+                <div class="carbon-summary-card">
+                    <div class="carbon-summary-value" id="carbonTopProvince">--</div>
+                    <div class="carbon-summary-label">排放最高省份</div>
+                </div>
+                <div class="carbon-summary-card">
+                    <div class="carbon-summary-value" id="carbonTopSector">--</div>
+                    <div class="carbon-summary-label">排放最高部门</div>
+                </div>
+                <div class="carbon-summary-card">
+                    <div class="carbon-summary-value" id="carbonProvinceCount">--</div>
+                    <div class="carbon-summary-label">覆盖省份数</div>
+                </div>
+            </div>
+
+            <!-- 三栏布局：左侧边栏 + 中间地图 + 右侧边栏 -->
+            <div class="carbon-layout-wrapper">
+                <!-- 左侧边栏：趋势图（浮动覆盖，可拖拽调整宽度） -->
+                <div class="carbon-sidebar-left" id="carbonSidebarLeft">
+                    <div class="carbon-chart-card sidebar-card">
+                        <div class="carbon-chart-title">
+                            <span>📈 CO₂排放趋势</span>
+                            <span class="chart-subtitle">MtCO₂/天</span>
+                        </div>
+                        <div class="carbon-chart-body">
+                            <div id="carbonTrendChart"></div>
+                        </div>
+                    </div>
+                    <!-- 拖拽调整宽度手柄 -->
+                    <div class="sidebar-resize-handle" id="sidebarResizeHandle"></div>
+                </div>
+
+                <!-- 中间主区域：全屏地图 -->
+                <div class="carbon-center-main">
+                    <div class="carbon-chart-card map-center-card">
+                        <div class="carbon-chart-title">
+                            <span>🗺️ 中国碳排放分布图</span>
+                            <span class="chart-subtitle">各省排放量热力图 (MtCO₂)</span>
+                        </div>
+                        <div class="carbon-chart-body">
+                            <div id="carbonMapChart"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 右侧边栏：部门占比 + 省份排名（浮动覆盖） -->
+                <div class="carbon-sidebar-right" id="carbonSidebarRight">
+                    <div class="carbon-chart-card sidebar-card-sm">
+                        <div class="carbon-chart-title">
+                            <span>🥧 部门排放占比</span>
+                        </div>
+                        <div class="carbon-chart-body">
+                            <div id="carbonSectorChart"></div>
+                        </div>
+                    </div>
+                    <div class="carbon-chart-card sidebar-card-sm">
+                        <div class="carbon-chart-title">
+                            <span>🏆 省份排放排名</span>
+                            <span class="chart-subtitle">Top 10</span>
+                        </div>
+                        <div class="carbon-chart-body">
+                            <div id="carbonProvinceRankChart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 数据来源 -->
+            <div class="carbon-source">
+                数据来源：<a href="https://carbonmonitor.org" target="_blank">Carbon Monitor</a>
+                | 中国省级CO₂排放数据 | 单位: MtCO₂/天 (百万吨CO₂/天)
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 浮动聊天按钮 -->
+    <div id="chatFab" onclick="toggleChatWidget()">
+        <span>💬</span>
+    </div>
+
+    <!-- 浮动聊天窗口 -->
+    <div id="chatWidget" class="hidden">
+        <div id="chatWidgetHeader">
+            <span>💬 碳策Agent</span>
+            <div id="chatWidgetControls">
+                <button onclick="minimizeChatWidget()" title="最小化">─</button>
+                <button onclick="toggleChatWidget()" title="关闭">✕</button>
+            </div>
+        </div>
+        <div id="chatWidgetBody">
+            <div class="chat-messages" id="chatMessages">
+                <div class="welcome-message">
+                    <div class="icon">🌿</div>
+                    <h2>欢迎使用碳策Agent</h2>
+                    <p>我是建筑节能减排智能助手，可以帮您分析建筑能耗、提供节能建议、查询分析报告。请输入您的问题开始对话。</p>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <textarea class="chat-input" id="chatInput" placeholder="输入您的问题..." rows="1"
+                          onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendMessage()}"></textarea>
+                <button class="chat-send-btn" id="sendBtn" onclick="sendMessage()" title="发送">
+                    ➤
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast 容器 -->
+    <div id="toastContainer"></div>
+
+    <!-- JS 模块 -->
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/app.js"></script>
+    <script src="/static/js/dashboard.js"></script>
+    <script src="/static/js/chat.js"></script>
+    <script src="/static/js/building.js"></script>
+    <script src="/static/js/analysis.js"></script>
+    <script src="/static/js/report.js"></script>
+    <script src="/static/js/carbon.js"></script>
+</body>
+</html>

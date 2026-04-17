@@ -1,0 +1,52 @@
+{
+  "report_id": "R001",
+  "title": "美国商业建筑能耗总体概况分析",
+  "date": "2016-08-01",
+  "data_source": "CBECS 2012 (2012_public_use_data_aug2016.csv)",
+  "summary": "基于2012年商业建筑能耗调查数据，对美国商业建筑的整体能耗情况进行综合分析。",
+  "key_findings": [
+    {
+      "finding": "总样本量",
+      "value": "6,720栋商业建筑",
+      "description": "2012年CBECS调查覆盖了全美6,720栋商业建筑的详细能耗数据"
+    },
+    {
+      "finding": "主要能源类型",
+      "value": "电力、天然气、燃油",
+      "description": "商业建筑主要使用电力（主要能源）、天然气（供暖和热水）和燃油作为能源"
+    },
+    {
+      "finding": "能耗强度差异",
+      "value": "因建筑类型而异",
+      "description": "不同建筑类型的能耗强度差异显著，餐饮建筑和医疗建筑能耗强度最高"
+    },
+    {
+      "finding": "区域分布",
+      "value": "4个主要普查区域",
+      "description": "东北部、中西部、南部、西部四个区域建筑能耗特征各有不同"
+    }
+  ],
+  "detailed_analysis": {
+    "sample_characteristics": {
+      "total_buildings": 6720,
+      "data_collection_period": "2012年",
+      "geographic_coverage": "美国全境"
+    },
+    "energy_consumption_overview": {
+      "electricity_usage": "电力是商业建筑最主要的能源形式",
+      "natural_gas_usage": "天然气主要用于供暖和热水供应",
+      "fuel_oil_usage": "燃油使用相对较少，主要集中在东北地区"
+    },
+    "building_characteristics": {
+      "size_distribution": "中小型建筑占主导地位",
+      "age_distribution": "建筑年龄分布广泛，从新建到百年建筑均有覆盖",
+      "ownership": "包括自用、租赁等多种产权形式"
+    }
+  },
+  "recommendations": [
+    "加强能耗监测和数据采集",
+    "针对高能耗建筑类型制定专项节能措施",
+    "推广建筑能源管理系统(EMCS)的应用"
+  ],
+  "keywords": ["CBECS", "商业建筑", "能耗分析", "美国", "2012"]
+}

@@ -1,0 +1,96 @@
+{
+  "report_id": "R007",
+  "title": "建筑年龄与能效关系分析",
+  "date": "2016-08-07",
+  "data_source": "CBECS 2012 (2012_public_use_data_aug2016.csv)",
+  "summary": "分析建筑建造年份与能效水平之间的关系。",
+  "key_findings": [
+    {
+      "finding": "新建建筑",
+      "value": "能效显著提高",
+      "description": "2000年后建造的建筑平均能效比1970年前建筑高20-30%"
+    },
+    {
+      "finding": "老旧建筑",
+      "value": "改造潜力大",
+      "description": "1980年前建造的建筑数量庞大，节能改造潜力最大"
+    },
+    {
+      "finding": "设备更新",
+      "value": "关键因素",
+      "description": "建筑能效与设备更新周期密切相关，15-20年设备需更换"
+    },
+    {
+      "finding": "规范影响",
+      "value": "能效标准提升",
+      "description": "建筑能效规范（ASHRAE 90.1）的更新推动了新建建筑能效提升"
+    }
+  ],
+  "building_age_distribution": {
+    "pre_1946": {
+      "share": "~15%",
+      "avg_eui_factor": "1.15",
+      "characteristics": "老旧建筑，围护结构差"
+    },
+    "1946_1959": {
+      "share": "~10%",
+      "avg_eui_factor": "1.10",
+      "characteristics": "战后建筑，能效一般"
+    },
+    "1960_1969": {
+      "share": "~12%",
+      "avg_eui_factor": "1.08",
+      "characteristics": "设备老旧"
+    },
+    "1970_1979": {
+      "share": "~18%",
+      "avg_eui_factor": "1.05",
+      "characteristics": "石油危机后开始重视节能"
+    },
+    "1980_1989": {
+      "share": "~15%",
+      "avg_eui_factor": "1.00",
+      "characteristics": "能效规范开始实施"
+    },
+    "1990_1999": {
+      "share": "~12%",
+      "avg_eui_factor": "0.95",
+      "characteristics": "规范趋于完善"
+    },
+    "2000_2012": {
+      "share": "~18%",
+      "avg_eui_factor": "0.90",
+      "characteristics": "新建建筑，能效最高"
+    }
+  },
+  "age_energy_factors": [
+    "围护结构保温性能（老建筑较差）",
+    "窗户技术（双层/三层玻璃vs单层）",
+    "HVAC系统效率（新技术显著提升）",
+    "照明技术（LED等新技术）",
+    "控制系统（现代EMCS系统）"
+  ],
+  "retrofit_priorities_by_age": {
+    "pre_1970": [
+      "围护结构保温升级",
+      "窗户更换",
+      "HVAC系统更新"
+    ],
+    "1970_1989": [
+      "HVAC系统升级",
+      "照明改造",
+      "控制系统安装"
+    ],
+    "1990_2012": [
+      "照明升级LED",
+      "系统优化调试",
+      "可再生能源"
+    ]
+  },
+  "recommendations": [
+    "优先改造1980年前建造的建筑",
+    "制定建筑能效升级路线图",
+    "推动老旧建筑设备更新换代"
+  ],
+  "keywords": ["建筑年龄", "能效", "改造", "节能潜力"]
+}

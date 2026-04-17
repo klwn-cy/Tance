@@ -1,0 +1,232 @@
+/* ========================================
+   碳策Agent - 响应式布局
+   ======================================== */
+
+/* 平板 (<=768px) */
+@media (max-width: 768px) {
+    :root {
+        --header-height: 56px;
+    }
+
+    .app-header {
+        padding: 0 var(--spacing-md);
+    }
+
+    .header-brand {
+        font-size: 1.1rem;
+    }
+
+    .header-nav {
+        margin-left: var(--spacing-md);
+    }
+
+    .nav-tab {
+        padding: 0 var(--spacing-sm);
+        font-size: 0.85rem;
+    }
+
+    .nav-tab .nav-text {
+        display: none;
+    }
+
+    .page {
+        padding: var(--spacing-md);
+    }
+
+    .page-header {
+        padding: var(--spacing-md);
+    }
+
+    .page-header h1 {
+        font-size: 1.2rem;
+    }
+
+    /* 对话页 */
+    .chat-layout {
+        flex-direction: column;
+        height: auto;
+        min-height: calc(100vh - var(--header-height) - var(--spacing-md) * 2 - 60px);
+    }
+
+    .chat-sidebar {
+        width: 100%;
+        order: 2;
+    }
+
+    .chat-main {
+        min-height: 400px;
+        order: 1;
+    }
+
+    .sidebar-body {
+        max-height: 200px;
+    }
+
+    .message {
+        max-width: 95%;
+    }
+
+    /* 建筑管理 */
+    .building-info-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+
+    .filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-bar .form-select,
+    .filter-bar .form-input {
+        width: 100%;
+    }
+
+    /* 数据分析 */
+    .chart-container {
+        padding: var(--spacing-md);
+    }
+
+    .chart-placeholder {
+        height: 280px;
+    }
+
+    .report-options {
+        grid-template-columns: 1fr;
+    }
+
+    .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* 表单 */
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 手机 (<=480px) */
+@media (max-width: 480px) {
+    :root {
+        --header-height: 52px;
+    }
+
+    .header-brand span {
+        display: none;
+    }
+
+    .nav-tab {
+        padding: 0 10px;
+        font-size: 1.1rem;
+    }
+
+    .page {
+        padding: var(--spacing-sm);
+    }
+
+    .page-header {
+        padding: var(--spacing-md);
+        border-radius: var(--radius-md);
+    }
+
+    .page-header h1 {
+        font-size: 1.1rem;
+    }
+
+    .page-header p {
+        font-size: 0.8rem;
+    }
+
+    .card {
+        padding: var(--spacing-md);
+    }
+
+    /* 对话 */
+    .chat-messages {
+        padding: var(--spacing-sm);
+    }
+
+    .message-bubble {
+        padding: 10px 14px;
+        font-size: 0.85rem;
+    }
+
+    .message-avatar {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+
+    .chat-input-area {
+        padding: var(--spacing-sm);
+    }
+
+    .chat-input {
+        padding: 10px 14px;
+        font-size: 0.85rem;
+    }
+
+    /* 建筑 */
+    .building-card-header {
+        padding: var(--spacing-sm);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+    }
+
+    .building-card-actions {
+        flex-wrap: wrap;
+    }
+
+    .building-info-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* 分析 */
+    .metrics-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    .metric-card {
+        padding: var(--spacing-sm);
+    }
+
+    .metric-value {
+        font-size: 1.2rem;
+    }
+
+    .chart-placeholder {
+        height: 220px;
+    }
+
+    .tab-bar {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .tab-item {
+        padding: 8px 14px;
+        font-size: 0.82rem;
+        white-space: nowrap;
+    }
+}
+
+/* 打印样式 */
+@media print {
+    .app-header,
+    .chat-sidebar,
+    .chat-input-area,
+    .btn,
+    .filter-bar {
+        display: none !important;
+    }
+
+    .app-content {
+        margin-top: 0;
+    }
+
+    .page {
+        display: block !important;
+        padding: 0;
+    }
+}

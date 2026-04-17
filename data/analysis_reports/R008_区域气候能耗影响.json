@@ -1,0 +1,90 @@
+{
+  "report_id": "R008",
+  "title": "区域气候对建筑能耗影响分析",
+  "date": "2016-08-08",
+  "data_source": "CBECS 2012 (2012_public_use_data_aug2016.csv)",
+  "summary": "分析美国不同气候区域建筑能耗的差异特征。",
+  "key_findings": [
+    {
+      "finding": "气候分区",
+      "value": "4个主要普查区域",
+      "description": "东北部、中西部、南部、西部四个区域气候差异显著"
+    },
+    {
+      "finding": "供暖主导区",
+      "value": "东北部和中西部",
+      "description": "寒冷气候区供暖能耗占总能耗的30-40%"
+    },
+    {
+      "finding": "制冷主导区",
+      "value": "南部地区",
+      "description": "炎热气候区制冷能耗占总能耗的25-35%"
+    },
+    {
+      "finding": "温和气候",
+      "value": "西部沿海",
+      "description": "温和气候区全年能耗较为均衡"
+    }
+  ],
+  "regional_energy_analysis": {
+    "northeast": {
+      "climate": "寒冷，湿度中等",
+      "hdd65": "5000-7000",
+      "cdd65": "500-1000",
+      "heating_share": "35-45%",
+      "cooling_share": "10-15%",
+      "primary_energy": "天然气、燃油",
+      "total_eui": "100-130 kBtu/sqft"
+    },
+    "midwest": {
+      "climate": "大陆性气候，冬冷夏热",
+      "hdd65": "5000-8000",
+      "cdd65": "800-1200",
+      "heating_share": "30-40%",
+      "cooling_share": "15-20%",
+      "primary_energy": "天然气",
+      "total_eui": "95-120 kBtu/sqft"
+    },
+    "south": {
+      "climate": "温暖至炎热",
+      "hdd65": "1000-3000",
+      "cdd65": "1500-2500",
+      "heating_share": "10-15%",
+      "cooling_share": "25-35%",
+      "primary_energy": "电力、天然气",
+      "total_eui": "80-110 kBtu/sqft"
+    },
+    "west": {
+      "climate": "多样，沿海温和",
+      "hdd65": "2000-4000",
+      "cdd65": "500-1500",
+      "heating_share": "20-25%",
+      "cooling_share": "15-20%",
+      "primary_energy": "天然气",
+      "total_eui": "70-100 kBtu/sqft"
+    }
+  },
+  "climate_adaptation_strategies": {
+    "cold_climate": [
+      "加强围护结构保温",
+      "高效供暖系统",
+      "热回收通风"
+    ],
+    "hot_climate": [
+      "高效制冷系统",
+      "遮阳和反射屋面",
+      "自然通风利用"
+    ],
+    "mixed_climate": [
+      "热泵系统（供暖+制冷）",
+      "免费冷却策略",
+      "灵活运行模式"
+    ]
+  },
+  "recommendations": [
+    "根据气候特点选择适宜的节能技术",
+    "优化HVAC系统配置以匹配当地气候",
+    "利用气候数据进行能耗预测和诊断"
+  ],
+  "keywords": ["气候分区", "供暖度日", "制冷度日", "区域差异"]
+}

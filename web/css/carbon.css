@@ -1,0 +1,393 @@
+/* ========================================
+   碳排放监测页面专用样式 - 浮动覆盖布局
+   ======================================== */
+
+/* 页面容器 - 覆盖默认限制 */
+#page-carbon {
+    padding: 0;
+    max-width: 100% !important;
+    width: 100%;
+    overflow: hidden;
+    animation: none;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* 筛选栏 */
+.carbon-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 100;
+}
+
+.carbon-filter-bar .form-select {
+    min-width: 140px;
+}
+
+.carbon-filter-bar .btn {
+    white-space: nowrap;
+}
+
+/* 汇总卡片 */
+.carbon-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.9);
+    position: relative;
+    z-index: 100;
+}
+
+.carbon-summary-card {
+    background: white;
+    border-radius: 8px;
+    padding: 12px 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    border-left: 3px solid;
+}
+
+.carbon-summary-card:nth-child(1) { border-color: #002FA7; }
+.carbon-summary-card:nth-child(2) { border-color: #e74c3c; }
+.carbon-summary-card:nth-child(3) { border-color: #f39c12; }
+.carbon-summary-card:nth-child(4) { border-color: #3498db; }
+
+.carbon-summary-value {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #2c3e50;
+    line-height: 1.2;
+}
+
+.carbon-summary-label {
+    font-size: 0.75rem;
+    color: #6c757d;
+    margin-top: 2px;
+}
+
+.carbon-summary-unit {
+    font-size: 0.7rem;
+    color: #adb5bd;
+}
+
+/* ========== 主容器：全屏地图 + 浮动侧边栏 ========== */
+
+.carbon-layout-wrapper {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 180px);
+    min-height: 500px;
+}
+
+/* ========== 中间主区域：全屏地图 ========== */
+
+.carbon-center-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.map-center-card {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.map-center-card .carbon-chart-title {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    border-bottom: none;
+    z-index: 10;
+}
+
+.map-center-card .carbon-chart-title .chart-subtitle {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.map-center-card .carbon-chart-body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+/* ========== 图表卡片通用样式 ========== */
+
+.carbon-chart-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.carbon-chart-title {
+    padding: 10px 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #2c3e50;
+    border-bottom: 1px solid #dee2e6;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carbon-chart-title .chart-subtitle {
+    font-size: 0.65rem;
+    color: #adb5bd;
+}
+
+.carbon-chart-body {
+    padding: 8px;
+    position: relative;
+}
+
+/* 图表容器自动撑满 */
+.carbon-chart-body > div {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* ========== 左侧边栏：浮动覆盖 + 可拖拽 ========== */
+
+.carbon-sidebar-left {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 280px;
+    min-width: 180px;
+    max-width: 400px;
+    height: 484px; /* 固定高度 */
+    z-index: 50;
+}
+
+/* 左侧卡片撑满整个侧栏 */
+.carbon-sidebar-left .carbon-chart-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.carbon-sidebar-left .carbon-chart-title {
+    flex-shrink: 0;
+    height: 36px;
+}
+
+.carbon-sidebar-left .carbon-chart-body {
+    flex: 1;
+    min-height: 400px;
+    padding: 8px;
+}
+
+.carbon-sidebar-left .carbon-chart-body > div {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* 拖拽调整手柄 */
+.sidebar-resize-handle {
+    position: absolute;
+    top: 0;
+    right: -4px;
+    width: 12px;
+    height: 100%;
+    background: transparent;
+    cursor: ew-resize;
+    z-index: 60;
+}
+
+.sidebar-resize-handle:hover {
+    background: rgba(0, 47, 167, 0.15);
+}
+
+.sidebar-resize-handle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 48px;
+    background: #002FA7;
+    border-radius: 2px;
+    opacity: 0.4;
+    transition: all 0.2s ease;
+}
+
+.sidebar-resize-handle:hover::before {
+    opacity: 1;
+    height: 56px;
+}
+
+.sidebar-resize-handle.dragging {
+    background: rgba(0, 47, 167, 0.25);
+}
+
+.sidebar-resize-handle.dragging::before {
+    opacity: 1;
+    height: 64px;
+}
+
+/* ========== 右侧边栏：两个图表 ========== */
+
+.carbon-sidebar-right {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 300px;
+    height: 484px; /* 与左侧高度一致 */
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar-card-sm {
+    flex: 1;
+    height: calc(50% - 6px); /* 两个卡片各占一半高度，减去gap的一半 */
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.sidebar-card-sm .carbon-chart-title {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+    height: 36px;
+}
+
+.sidebar-card-sm .carbon-chart-body {
+    flex: 1;
+    min-height: 180px;
+    padding: 6px;
+}
+
+.sidebar-card-sm .carbon-chart-body > div {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* ========== 加载状态 ========== */
+
+.carbon-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 32px;
+    color: #6c757d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.carbon-loading.hidden {
+    display: none;
+}
+
+/* ========== 数据来源 ========== */
+
+.carbon-source {
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 0.75rem;
+    color: #adb5bd;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 100;
+}
+
+.carbon-source a {
+    color: #002FA7;
+    text-decoration: none;
+}
+
+/* ========== 响应式适配 ========== */
+
+@media (max-width: 1400px) {
+    .carbon-sidebar-left { width: 240px; }
+    .carbon-sidebar-right { width: 260px; }
+}
+
+@media (max-width: 1200px) {
+    .carbon-sidebar-left {
+        width: 200px;
+        height: 400px;
+    }
+    .carbon-sidebar-right {
+        width: 220px;
+        height: 400px;
+    }
+    .carbon-sidebar-left .carbon-chart-body {
+        min-height: 350px;
+    }
+    .sidebar-card-sm .carbon-chart-body {
+        min-height: 160px;
+    }
+}
+
+@media (max-width: 900px) {
+    .carbon-sidebar-left {
+        width: 180px;
+        height: 350px;
+    }
+    .carbon-sidebar-right {
+        width: 180px;
+        height: 350px;
+    }
+    .carbon-sidebar-left .carbon-chart-body {
+        min-height: 300px;
+    }
+    .sidebar-card-sm .carbon-chart-body {
+        min-height: 130px;
+    }
+}
+
+@media (max-width: 600px) {
+    .carbon-summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .carbon-filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .carbon-sidebar-left,
+    .carbon-sidebar-right {
+        display: none;
+    }
+    .carbon-layout-wrapper {
+        height: calc(100vh - 220px);
+    }
+}

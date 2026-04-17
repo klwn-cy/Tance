@@ -1,0 +1,191 @@
+/* ========================================
+   碳策Agent - 数据分析页样式
+   ======================================== */
+
+/* 图表容器 */
+.chart-container {
+    background: var(--color-bg-white);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+    min-height: 350px;
+}
+
+.chart-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--color-border);
+}
+
+/* ECharts 占位 */
+.chart-placeholder {
+    width: 100%;
+    height: 350px;
+}
+
+/* ========== 报告列表 ========== */
+
+.report-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.report-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-md);
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.report-item:hover {
+    border-color: var(--color-primary-light);
+    background: var(--color-primary-bg);
+}
+
+.report-item.selected {
+    border-color: var(--color-primary);
+    background: var(--color-primary-bg);
+}
+
+.report-item-info h4 {
+    font-size: 0.95rem;
+    color: var(--color-text);
+    margin-bottom: 4px;
+}
+
+.report-item-info p {
+    font-size: 0.82rem;
+    color: var(--color-text-secondary);
+}
+
+/* ========== 报告详情 ========== */
+
+.report-detail {
+    background: var(--color-bg-white);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    padding: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+    line-height: 1.8;
+}
+
+.report-detail h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.report-detail .finding {
+    padding: var(--spacing-sm);
+    background: var(--color-bg);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--spacing-sm);
+    border-left: 3px solid var(--color-primary-light);
+}
+
+/* ========== 报告生成表单 ========== */
+
+.report-form {
+    background: var(--color-bg-white);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    padding: var(--spacing-lg);
+}
+
+.report-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--spacing-sm);
+    margin: var(--spacing-md) 0;
+}
+
+.report-option {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: background var(--transition-fast);
+    font-size: 0.9rem;
+}
+
+.report-option:hover {
+    background: var(--color-primary-bg);
+}
+
+.report-option input[type="checkbox"] {
+    accent-color: var(--color-primary-light);
+    width: 16px;
+    height: 16px;
+}
+
+/* 建筑选择器 */
+.building-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
+}
+
+.building-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 12px;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.building-chip:hover {
+    border-color: var(--color-primary-light);
+}
+
+.building-chip.selected {
+    background: var(--color-primary-bg);
+    border-color: var(--color-primary-light);
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+/* ========== 生成进度 ========== */
+
+.report-progress {
+    text-align: center;
+    padding: var(--spacing-xl);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background: var(--color-border);
+    border-radius: 3px;
+    overflow: hidden;
+    margin: var(--spacing-md) 0;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    border-radius: 3px;
+    transition: width 0.5s ease;
+    animation: progressPulse 2s ease infinite;
+}
+
+@keyframes progressPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}

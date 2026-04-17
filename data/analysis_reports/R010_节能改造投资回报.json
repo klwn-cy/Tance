@@ -1,0 +1,123 @@
+{
+  "report_id": "R010",
+  "title": "商业建筑节能改造投资回报分析",
+  "date": "2016-08-10",
+  "data_source": "CBECS 2012 (2012_public_use_data_aug2016.csv)",
+  "summary": "基于CBECS数据分析各类节能改造措施的投资回报和经济性。",
+  "key_findings": [
+    {
+      "finding": "最佳投资回报",
+      "value": "照明改造",
+      "description": "LED照明改造投资回报期最短，通常1-3年即可收回投资"
+    },
+    {
+      "finding": "中等投资回报",
+      "value": "HVAC升级",
+      "description": "HVAC系统升级投资回报期3-7年，节能效果显著"
+    },
+    {
+      "finding": "长期投资",
+      "value": "围护结构改造",
+      "description": "围护结构改造投资大、回报期长（7-15年），但寿命长"
+    },
+    {
+      "finding": "综合改造",
+      "value": "效果最佳",
+      "description": "综合节能改造可实现30-50%节能，整体经济性最优"
+    }
+  ],
+  "retrofit_measures_analysis": {
+    "lighting_upgrade": {
+      "measure": "照明升级（LED替换）",
+      "typical_cost": "$2-5/sqft",
+      "energy_savings": "40-60%",
+      "payback_years": "1-3",
+      "roi_percent": "30-80%",
+      "difficulty": "低",
+      "lifespan_years": "15-25"
+    },
+    "lighting_controls": {
+      "measure": "照明控制系统",
+      "typical_cost": "$0.5-2/sqft",
+      "energy_savings": "20-40%",
+      "payback_years": "1-3",
+      "roi_percent": "25-60%",
+      "difficulty": "低",
+      "lifespan_years": "10-15"
+    },
+    "hvac_upgrade": {
+      "measure": "HVAC系统升级",
+      "typical_cost": "$5-15/sqft",
+      "energy_savings": "20-35%",
+      "payback_years": "3-7",
+      "roi_percent": "15-30%",
+      "difficulty": "中",
+      "lifespan_years": "15-25"
+    },
+    "building_controls": {
+      "measure": "建筑自动化系统",
+      "typical_cost": "$1-5/sqft",
+      "energy_savings": "10-25%",
+      "payback_years": "2-5",
+      "roi_percent": "20-40%",
+      "difficulty": "中",
+      "lifespan_years": "10-20"
+    },
+    "window_replacement": {
+      "measure": "窗户更换",
+      "typical_cost": "$15-40/sqft（窗户面积）",
+      "energy_savings": "10-25%",
+      "payback_years": "7-15",
+      "roi_percent": "8-15%",
+      "difficulty": "高",
+      "lifespan_years": "25-40"
+    },
+    "insulation_upgrade": {
+      "measure": "保温升级",
+      "typical_cost": "$1-5/sqft",
+      "energy_savings": "5-15%",
+      "payback_years": "5-12",
+      "roi_percent": "10-20%",
+      "difficulty": "中",
+      "lifespan_years": "30+"
+    },
+    "commissioning": {
+      "measure": "系统调试优化",
+      "typical_cost": "$0.3-1/sqft",
+      "energy_savings": "5-15%",
+      "payback_years": "0.5-2",
+      "roi_percent": "50-150%",
+      "difficulty": "低",
+      "lifespan_years": "3-5（需重新调试）"
+    }
+  },
+  "investment_priorities": {
+    "short_term": [
+      "系统调试优化（最高ROI）",
+      "照明升级（快速回报）",
+      "照明控制（低成本高回报）"
+    ],
+    "medium_term": [
+      "HVAC系统升级",
+      "建筑自动化系统",
+      "保温升级"
+    ],
+    "long_term": [
+      "窗户更换",
+      "围护结构综合改造",
+      "可再生能源系统"
+    ]
+  },
+  "financing_options": [
+    "节能服务公司(ESCO)合同能源管理",
+    "公用事业激励计划",
+    "绿色建筑贷款",
+    "PACE融资计划"
+  ],
+  "recommendations": [
+    "优先实施低成本、快回报的改造措施",
+    "利用公用事业激励政策降低投资成本",
+    "考虑综合改造以获得更大节能效益"
+  ],
+  "keywords": ["节能改造", "投资回报", "ROI", "经济性分析"]
+}

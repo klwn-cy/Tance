@@ -1,0 +1,72 @@
+{
+  "B001": {
+    "name": "教学楼A栋",
+    "type": "教育建筑",
+    "area": 15000,
+    "location": "北京",
+    "year_built": 2010,
+    "floors": 6,
+    "occupancy": 1200,
+    "energy_data": {
+      "2024-01": {"electricity": 85000, "gas": 12000, "water": 3200},
+      "2024-02": {"electricity": 78000, "gas": 13500, "water": 2800},
+      "2024-03": {"electricity": 72000, "gas": 8000, "water": 3100}
+    }
+  },
+  "B002": {
+    "name": "图书馆",
+    "type": "公共建筑",
+    "area": 8000,
+    "location": "北京",
+    "year_built": 2015,
+    "floors": 4,
+    "occupancy": 500,
+    "energy_data": {
+      "2024-01": {"electricity": 45000, "gas": 6000, "water": 1800},
+      "2024-02": {"electricity": 42000, "gas": 6500, "water": 1600},
+      "2024-03": {"electricity": 38000, "gas": 4500, "water": 1700}
+    }
+  },
+  "B003": {
+    "name": "实验楼",
+    "type": "科研建筑",
+    "area": 12000,
+    "location": "北京",
+    "year_built": 2018,
+    "floors": 5,
+    "occupancy": 300,
+    "energy_data": {
+      "2024-01": {"electricity": 120000, "gas": 8000, "water": 4500},
+      "2024-02": {"electricity": 115000, "gas": 8500, "water": 4200},
+      "2024-03": {"electricity": 98000, "gas": 6000, "water": 4300}
+    }
+  },
+  "B004": {
+    "name": "学生宿舍1号楼",
+    "type": "居住建筑",
+    "area": 6000,
+    "location": "北京",
+    "year_built": 2012,
+    "floors": 6,
+    "occupancy": 800,
+    "energy_data": {
+      "2024-01": {"electricity": 35000, "gas": 18000, "water": 2800},
+      "2024-02": {"electricity": 32000, "gas": 19000, "water": 2600},
+      "2024-03": {"electricity": 28000, "gas": 12000, "water": 2700}
+    }
+  },
+  "B005": {
+    "name": "体育馆",
+    "type": "体育建筑",
+    "area": 10000,
+    "location": "北京",
+    "year_built": 2016,
+    "floors": 2,
+    "occupancy": 1500,
+    "energy_data": {
+      "2024-01": {"electricity": 28000, "gas": 5000, "water": 1500},
+      "2024-02": {"electricity": 25000, "gas": 5500, "water": 1400},
+      "2024-03": {"electricity": 22000, "gas": 3500, "water": 1450}
+    }
+  }
+}

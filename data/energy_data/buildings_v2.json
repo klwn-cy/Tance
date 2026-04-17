@@ -1,0 +1,4910 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "last_updated": "2026-04-15 15:57:53",
+    "data_source": "模拟生成 - 用于大数据演示",
+    "total_buildings": 50
+  },
+  "buildings": {
+    "B001": {
+      "basic_info": {
+        "name": "综合教学楼001",
+        "building_type": "教育建筑",
+        "region": "西北地区",
+        "floor_area_sqm": 15410,
+        "num_floors": 6,
+        "num_basements": 2,
+        "year_built": 2022,
+        "num_employees": 1494,
+        "weekly_operating_hours": 60
+      },
+      "building_structure": {
+        "wall_construction": "玻璃幕墙",
+        "roof_construction": "瓦片屋顶",
+        "roof_type": "坡顶",
+        "building_shape": "矩形",
+        "glass_percentage": 22.7,
+        "floor_to_ceiling_height_m": 3.179353223792619
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "集中供暖"
+        },
+        "cooling": {
+          "primary_type": "VRV多联机"
+        },
+        "water_heating": {
+          "primary_type": "无集中热水"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 394860,
+            "natural_gas_m3": 14208,
+            "water_m3": 949
+          },
+          "2024-02": {
+            "electricity_kwh": 395862,
+            "natural_gas_m3": 13995,
+            "water_m3": 879
+          },
+          "2024-03": {
+            "electricity_kwh": 262221,
+            "natural_gas_m3": 10294,
+            "water_m3": 660
+          },
+          "2024-04": {
+            "electricity_kwh": 275354,
+            "natural_gas_m3": 1844,
+            "water_m3": 443
+          },
+          "2024-05": {
+            "electricity_kwh": 223567,
+            "natural_gas_m3": 826,
+            "water_m3": 897
+          },
+          "2024-06": {
+            "electricity_kwh": 265263,
+            "natural_gas_m3": 1017,
+            "water_m3": 861
+          },
+          "2024-07": {
+            "electricity_kwh": 304503,
+            "natural_gas_m3": 1444,
+            "water_m3": 1026
+          },
+          "2024-08": {
+            "electricity_kwh": 327256,
+            "natural_gas_m3": 990,
+            "water_m3": 759
+          },
+          "2024-09": {
+            "electricity_kwh": 294229,
+            "natural_gas_m3": 1333,
+            "water_m3": 686
+          },
+          "2024-10": {
+            "electricity_kwh": 262387,
+            "natural_gas_m3": 2902,
+            "water_m3": 852
+          },
+          "2024-11": {
+            "electricity_kwh": 272892,
+            "natural_gas_m3": 7867,
+            "water_m3": 806
+          },
+          "2024-12": {
+            "electricity_kwh": 315165,
+            "natural_gas_m3": 8157,
+            "water_m3": 1059
+          }
+        }
+      }
+    },
+    "B002": {
+      "basic_info": {
+        "name": "实验教学楼002",
+        "building_type": "教育建筑",
+        "region": "华东地区",
+        "floor_area_sqm": 6991,
+        "num_floors": 4,
+        "num_basements": 0,
+        "year_built": 2008,
+        "num_employees": 971,
+        "weekly_operating_hours": 46
+      },
+      "building_structure": {
+        "wall_construction": "砖墙",
+        "roof_construction": "混凝土平顶",
+        "roof_type": "锯齿形",
+        "building_shape": "不规则形状",
+        "glass_percentage": 23.3,
+        "floor_to_ceiling_height_m": 3.3492296172704474
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "电采暖"
+        },
+        "cooling": {
+          "primary_type": "中央空调"
+        },
+        "water_heating": {
+          "primary_type": "集中热水系统"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": false,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 131595,
+            "natural_gas_m3": 435,
+            "water_m3": 539
+          },
+          "2024-02": {
+            "electricity_kwh": 108661,
+            "natural_gas_m3": 434,
+            "water_m3": 214
+          },
+          "2024-03": {
+            "electricity_kwh": 100851,
+            "natural_gas_m3": 412,
+            "water_m3": 545
+          },
+          "2024-04": {
+            "electricity_kwh": 74505,
+            "natural_gas_m3": 473,
+            "water_m3": 489
+          },
+          "2024-05": {
+            "electricity_kwh": 71309,
+            "natural_gas_m3": 927,
+            "water_m3": 251
+          },
+          "2024-06": {
+            "electricity_kwh": 89604,
+            "natural_gas_m3": 1231,
+            "water_m3": 513
+          },
+          "2024-07": {
+            "electricity_kwh": 94473,
+            "natural_gas_m3": 1188,
+            "water_m3": 346
+          },
+          "2024-08": {
+            "electricity_kwh": 116430,
+            "natural_gas_m3": 468,
+            "water_m3": 263
+          },
+          "2024-09": {
+            "electricity_kwh": 88720,
+            "natural_gas_m3": 490,
+            "water_m3": 299
+          },
+          "2024-10": {
+            "electricity_kwh": 82798,
+            "natural_gas_m3": 921,
+            "water_m3": 311
+          },
+          "2024-11": {
+            "electricity_kwh": 78706,
+            "natural_gas_m3": 849,
+            "water_m3": 317
+          },
+          "2024-12": {
+            "electricity_kwh": 115499,
+            "natural_gas_m3": 558,
+            "water_m3": 407
+          }
+        }
+      }
+    },
+    "B003": {
+      "basic_info": {
+        "name": "学生活动中心003",
+        "building_type": "教育建筑",
+        "region": "南方地区",
+        "floor_area_sqm": 10756,
+        "num_floors": 5,
+        "num_basements": 2,
+        "year_built": 2013,
+        "num_employees": 1054,
+        "weekly_operating_hours": 30
+      },
+      "building_structure": {
+        "wall_construction": "玻璃幕墙",
+        "roof_construction": "混凝土平顶",
+        "roof_type": "平顶",
+        "building_shape": "不规则形状",
+        "glass_percentage": 17.1,
+        "floor_to_ceiling_height_m": 4.056389435884099
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "无供暖"
+        },
+        "cooling": {
+          "primary_type": "冷水机组"
+        },
+        "water_heating": {
+          "primary_type": "太阳能热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": false,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 171937,
+            "natural_gas_m3": 1447,
+            "water_m3": 364
+          },
+          "2024-02": {
+            "electricity_kwh": 157926,
+            "natural_gas_m3": 617,
+            "water_m3": 374
+          },
+          "2024-03": {
+            "electricity_kwh": 123286,
+            "natural_gas_m3": 743,
+            "water_m3": 502
+          },
+          "2024-04": {
+            "electricity_kwh": 109109,
+            "natural_gas_m3": 905,
+            "water_m3": 820
+          },
+          "2024-05": {
+            "electricity_kwh": 96929,
+            "natural_gas_m3": 1883,
+            "water_m3": 354
+          },
+          "2024-06": {
+            "electricity_kwh": 137586,
+            "natural_gas_m3": 2097,
+            "water_m3": 614
+          },
+          "2024-07": {
+            "electricity_kwh": 134096,
+            "natural_gas_m3": 1115,
+            "water_m3": 521
+          },
+          "2024-08": {
+            "electricity_kwh": 152287,
+            "natural_gas_m3": 1107,
+            "water_m3": 858
+          },
+          "2024-09": {
+            "electricity_kwh": 107045,
+            "natural_gas_m3": 1714,
+            "water_m3": 854
+          },
+          "2024-10": {
+            "electricity_kwh": 89513,
+            "natural_gas_m3": 1126,
+            "water_m3": 519
+          },
+          "2024-11": {
+            "electricity_kwh": 129827,
+            "natural_gas_m3": 1062,
+            "water_m3": 785
+          },
+          "2024-12": {
+            "electricity_kwh": 166406,
+            "natural_gas_m3": 2059,
+            "water_m3": 471
+          }
+        }
+      }
+    },
+    "B004": {
+      "basic_info": {
+        "name": "博物馆分馆004",
+        "building_type": "公共建筑",
+        "region": "华中地区",
+        "floor_area_sqm": 4422,
+        "num_floors": 6,
+        "num_basements": 2,
+        "year_built": 2007,
+        "num_employees": 212,
+        "weekly_operating_hours": 31
+      },
+      "building_structure": {
+        "wall_construction": "钢结构",
+        "roof_construction": "玻璃顶",
+        "roof_type": "坡顶",
+        "building_shape": "L形",
+        "glass_percentage": 19.7,
+        "floor_to_ceiling_height_m": 4.45654181646097
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "热泵"
+        },
+        "cooling": {
+          "primary_type": "VRV多联机"
+        },
+        "water_heating": {
+          "primary_type": "集中热水系统"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 106127,
+            "natural_gas_m3": 554,
+            "water_m3": 216
+          },
+          "2024-02": {
+            "electricity_kwh": 87981,
+            "natural_gas_m3": 711,
+            "water_m3": 264
+          },
+          "2024-03": {
+            "electricity_kwh": 69300,
+            "natural_gas_m3": 727,
+            "water_m3": 223
+          },
+          "2024-04": {
+            "electricity_kwh": 60678,
+            "natural_gas_m3": 630,
+            "water_m3": 287
+          },
+          "2024-05": {
+            "electricity_kwh": 55224,
+            "natural_gas_m3": 335,
+            "water_m3": 181
+          },
+          "2024-06": {
+            "electricity_kwh": 86494,
+            "natural_gas_m3": 259,
+            "water_m3": 168
+          },
+          "2024-07": {
+            "electricity_kwh": 96402,
+            "natural_gas_m3": 874,
+            "water_m3": 319
+          },
+          "2024-08": {
+            "electricity_kwh": 87528,
+            "natural_gas_m3": 433,
+            "water_m3": 203
+          },
+          "2024-09": {
+            "electricity_kwh": 56602,
+            "natural_gas_m3": 475,
+            "water_m3": 240
+          },
+          "2024-10": {
+            "electricity_kwh": 51105,
+            "natural_gas_m3": 601,
+            "water_m3": 89
+          },
+          "2024-11": {
+            "electricity_kwh": 66857,
+            "natural_gas_m3": 413,
+            "water_m3": 89
+          },
+          "2024-12": {
+            "electricity_kwh": 89604,
+            "natural_gas_m3": 497,
+            "water_m3": 337
+          }
+        }
+      }
+    },
+    "B005": {
+      "basic_info": {
+        "name": "展览馆005号馆",
+        "building_type": "公共建筑",
+        "region": "南方地区",
+        "floor_area_sqm": 3150,
+        "num_floors": 6,
+        "num_basements": 2,
+        "year_built": 2018,
+        "num_employees": 195,
+        "weekly_operating_hours": 59
+      },
+      "building_structure": {
+        "wall_construction": "砖墙",
+        "roof_construction": "金属屋面",
+        "roof_type": "平顶",
+        "building_shape": "矩形",
+        "glass_percentage": 39.8,
+        "floor_to_ceiling_height_m": 4.386614769809842
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "天然气锅炉"
+        },
+        "cooling": {
+          "primary_type": "中央空调"
+        },
+        "water_heating": {
+          "primary_type": "电热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 54970,
+            "natural_gas_m3": 226,
+            "water_m3": 206
+          },
+          "2024-02": {
+            "electricity_kwh": 60427,
+            "natural_gas_m3": 340,
+            "water_m3": 209
+          },
+          "2024-03": {
+            "electricity_kwh": 41837,
+            "natural_gas_m3": 413,
+            "water_m3": 185
+          },
+          "2024-04": {
+            "electricity_kwh": 34584,
+            "natural_gas_m3": 301,
+            "water_m3": 235
+          },
+          "2024-05": {
+            "electricity_kwh": 32943,
+            "natural_gas_m3": 376,
+            "water_m3": 232
+          },
+          "2024-06": {
+            "electricity_kwh": 43260,
+            "natural_gas_m3": 209,
+            "water_m3": 234
+          },
+          "2024-07": {
+            "electricity_kwh": 51830,
+            "natural_gas_m3": 439,
+            "water_m3": 111
+          },
+          "2024-08": {
+            "electricity_kwh": 46379,
+            "natural_gas_m3": 499,
+            "water_m3": 243
+          },
+          "2024-09": {
+            "electricity_kwh": 34782,
+            "natural_gas_m3": 271,
+            "water_m3": 135
+          },
+          "2024-10": {
+            "electricity_kwh": 34437,
+            "natural_gas_m3": 611,
+            "water_m3": 102
+          },
+          "2024-11": {
+            "electricity_kwh": 42521,
+            "natural_gas_m3": 335,
+            "water_m3": 176
+          },
+          "2024-12": {
+            "electricity_kwh": 49337,
+            "natural_gas_m3": 236,
+            "water_m3": 112
+          }
+        }
+      }
+    },
+    "B006": {
+      "basic_info": {
+        "name": "市民服务中心006号",
+        "building_type": "公共建筑",
+        "region": "东北地区",
+        "floor_area_sqm": 11283,
+        "num_floors": 2,
+        "num_basements": 1,
+        "year_built": 2005,
+        "num_employees": 699,
+        "weekly_operating_hours": 59
+      },
+      "building_structure": {
+        "wall_construction": "复合结构",
+        "roof_construction": "瓦片屋顶",
+        "roof_type": "平顶",
+        "building_shape": "矩形",
+        "glass_percentage": 23.0,
+        "floor_to_ceiling_height_m": 3.4333462884852795
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "天然气锅炉"
+        },
+        "cooling": {
+          "primary_type": "分体空调"
+        },
+        "water_heating": {
+          "primary_type": "热泵热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 373489,
+            "natural_gas_m3": 10478,
+            "water_m3": 735
+          },
+          "2024-02": {
+            "electricity_kwh": 352734,
+            "natural_gas_m3": 8477,
+            "water_m3": 243
+          },
+          "2024-03": {
+            "electricity_kwh": 313767,
+            "natural_gas_m3": 10744,
+            "water_m3": 328
+          },
+          "2024-04": {
+            "electricity_kwh": 203412,
+            "natural_gas_m3": 1942,
+            "water_m3": 657
+          },
+          "2024-05": {
+            "electricity_kwh": 221279,
+            "natural_gas_m3": 724,
+            "water_m3": 251
+          },
+          "2024-06": {
+            "electricity_kwh": 294128,
+            "natural_gas_m3": 2090,
+            "water_m3": 366
+          },
+          "2024-07": {
+            "electricity_kwh": 323922,
+            "natural_gas_m3": 1782,
+            "water_m3": 858
+          },
+          "2024-08": {
+            "electricity_kwh": 295645,
+            "natural_gas_m3": 856,
+            "water_m3": 406
+          },
+          "2024-09": {
+            "electricity_kwh": 251866,
+            "natural_gas_m3": 1852,
+            "water_m3": 256
+          },
+          "2024-10": {
+            "electricity_kwh": 229148,
+            "natural_gas_m3": 1156,
+            "water_m3": 709
+          },
+          "2024-11": {
+            "electricity_kwh": 260106,
+            "natural_gas_m3": 6456,
+            "water_m3": 248
+          },
+          "2024-12": {
+            "electricity_kwh": 316549,
+            "natural_gas_m3": 13430,
+            "water_m3": 850
+          }
+        }
+      }
+    },
+    "B007": {
+      "basic_info": {
+        "name": "档案馆007楼",
+        "building_type": "公共建筑",
+        "region": "南方地区",
+        "floor_area_sqm": 9445,
+        "num_floors": 5,
+        "num_basements": 0,
+        "year_built": 1991,
+        "num_employees": 717,
+        "weekly_operating_hours": 32
+      },
+      "building_structure": {
+        "wall_construction": "玻璃幕墙",
+        "roof_construction": "玻璃顶",
+        "roof_type": "平顶",
+        "building_shape": "不规则形状",
+        "glass_percentage": 15.3,
+        "floor_to_ceiling_height_m": 4.156916987271898
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "无供暖"
+        },
+        "cooling": {
+          "primary_type": "VRV多联机"
+        },
+        "water_heating": {
+          "primary_type": "天然气热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": false,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 161297,
+            "natural_gas_m3": 757,
+            "water_m3": 223
+          },
+          "2024-02": {
+            "electricity_kwh": 167071,
+            "natural_gas_m3": 851,
+            "water_m3": 676
+          },
+          "2024-03": {
+            "electricity_kwh": 145700,
+            "natural_gas_m3": 1159,
+            "water_m3": 562
+          },
+          "2024-04": {
+            "electricity_kwh": 98526,
+            "natural_gas_m3": 1459,
+            "water_m3": 697
+          },
+          "2024-05": {
+            "electricity_kwh": 94209,
+            "natural_gas_m3": 760,
+            "water_m3": 207
+          },
+          "2024-06": {
+            "electricity_kwh": 147737,
+            "natural_gas_m3": 1867,
+            "water_m3": 553
+          },
+          "2024-07": {
+            "electricity_kwh": 150289,
+            "natural_gas_m3": 1405,
+            "water_m3": 317
+          },
+          "2024-08": {
+            "electricity_kwh": 175594,
+            "natural_gas_m3": 590,
+            "water_m3": 198
+          },
+          "2024-09": {
+            "electricity_kwh": 126313,
+            "natural_gas_m3": 813,
+            "water_m3": 626
+          },
+          "2024-10": {
+            "electricity_kwh": 113059,
+            "natural_gas_m3": 488,
+            "water_m3": 646
+          },
+          "2024-11": {
+            "electricity_kwh": 120555,
+            "natural_gas_m3": 1408,
+            "water_m3": 237
+          },
+          "2024-12": {
+            "electricity_kwh": 151697,
+            "natural_gas_m3": 1052,
+            "water_m3": 632
+          }
+        }
+      }
+    },
+    "B008": {
+      "basic_info": {
+        "name": "展览馆008号馆",
+        "building_type": "公共建筑",
+        "region": "西北地区",
+        "floor_area_sqm": 6186,
+        "num_floors": 3,
+        "num_basements": 0,
+        "year_built": 2000,
+        "num_employees": 389,
+        "weekly_operating_hours": 51
+      },
+      "building_structure": {
+        "wall_construction": "木结构",
+        "roof_construction": "混凝土平顶",
+        "roof_type": "穹顶",
+        "building_shape": "矩形",
+        "glass_percentage": 29.6,
+        "floor_to_ceiling_height_m": 4.1348680234121495
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "天然气锅炉"
+        },
+        "cooling": {
+          "primary_type": "VRV多联机"
+        },
+        "water_heating": {
+          "primary_type": "热泵热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 163391,
+            "natural_gas_m3": 3429,
+            "water_m3": 266
+          },
+          "2024-02": {
+            "electricity_kwh": 162190,
+            "natural_gas_m3": 6422,
+            "water_m3": 480
+          },
+          "2024-03": {
+            "electricity_kwh": 149022,
+            "natural_gas_m3": 4804,
+            "water_m3": 201
+          },
+          "2024-04": {
+            "electricity_kwh": 123100,
+            "natural_gas_m3": 715,
+            "water_m3": 232
+          },
+          "2024-05": {
+            "electricity_kwh": 109943,
+            "natural_gas_m3": 1133,
+            "water_m3": 366
+          },
+          "2024-06": {
+            "electricity_kwh": 154391,
+            "natural_gas_m3": 826,
+            "water_m3": 272
+          },
+          "2024-07": {
+            "electricity_kwh": 168932,
+            "natural_gas_m3": 1183,
+            "water_m3": 220
+          },
+          "2024-08": {
+            "electricity_kwh": 133050,
+            "natural_gas_m3": 642,
+            "water_m3": 232
+          },
+          "2024-09": {
+            "electricity_kwh": 112801,
+            "natural_gas_m3": 785,
+            "water_m3": 204
+          },
+          "2024-10": {
+            "electricity_kwh": 121461,
+            "natural_gas_m3": 523,
+            "water_m3": 439
+          },
+          "2024-11": {
+            "electricity_kwh": 147625,
+            "natural_gas_m3": 6147,
+            "water_m3": 220
+          },
+          "2024-12": {
+            "electricity_kwh": 185680,
+            "natural_gas_m3": 4009,
+            "water_m3": 442
+          }
+        }
+      }
+    },
+    "B009": {
+      "basic_info": {
+        "name": "研究院大楼009",
+        "building_type": "科研建筑",
+        "region": "华东地区",
+        "floor_area_sqm": 17842,
+        "num_floors": 5,
+        "num_basements": 0,
+        "year_built": 1996,
+        "num_employees": 356,
+        "weekly_operating_hours": 49
+      },
+      "building_structure": {
+        "wall_construction": "玻璃幕墙",
+        "roof_construction": "混凝土平顶",
+        "roof_type": "穹顶",
+        "building_shape": "圆形",
+        "glass_percentage": 34.6,
+        "floor_to_ceiling_height_m": 4.249855760212381
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "电采暖"
+        },
+        "cooling": {
+          "primary_type": "VRV多联机"
+        },
+        "water_heating": {
+          "primary_type": "热泵热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": false,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 428619,
+            "natural_gas_m3": 1907,
+            "water_m3": 1017
+          },
+          "2024-02": {
+            "electricity_kwh": 445186,
+            "natural_gas_m3": 1264,
+            "water_m3": 1178
+          },
+          "2024-03": {
+            "electricity_kwh": 308527,
+            "natural_gas_m3": 3205,
+            "water_m3": 854
+          },
+          "2024-04": {
+            "electricity_kwh": 242920,
+            "natural_gas_m3": 1515,
+            "water_m3": 1180
+          },
+          "2024-05": {
+            "electricity_kwh": 285427,
+            "natural_gas_m3": 1330,
+            "water_m3": 1010
+          },
+          "2024-06": {
+            "electricity_kwh": 370324,
+            "natural_gas_m3": 2011,
+            "water_m3": 893
+          },
+          "2024-07": {
+            "electricity_kwh": 374662,
+            "natural_gas_m3": 3283,
+            "water_m3": 1022
+          },
+          "2024-08": {
+            "electricity_kwh": 314430,
+            "natural_gas_m3": 2309,
+            "water_m3": 713
+          },
+          "2024-09": {
+            "electricity_kwh": 258099,
+            "natural_gas_m3": 3088,
+            "water_m3": 1094
+          },
+          "2024-10": {
+            "electricity_kwh": 246957,
+            "natural_gas_m3": 906,
+            "water_m3": 1168
+          },
+          "2024-11": {
+            "electricity_kwh": 304693,
+            "natural_gas_m3": 2242,
+            "water_m3": 734
+          },
+          "2024-12": {
+            "electricity_kwh": 435950,
+            "natural_gas_m3": 3279,
+            "water_m3": 1064
+          }
+        }
+      }
+    },
+    "B010": {
+      "basic_info": {
+        "name": "科技孵化器010栋",
+        "building_type": "科研建筑",
+        "region": "南方地区",
+        "floor_area_sqm": 18612,
+        "num_floors": 8,
+        "num_basements": 2,
+        "year_built": 2006,
+        "num_employees": 335,
+        "weekly_operating_hours": 34
+      },
+      "building_structure": {
+        "wall_construction": "复合结构",
+        "roof_construction": "金属屋面",
+        "roof_type": "穹顶",
+        "building_shape": "矩形",
+        "glass_percentage": 31.2,
+        "floor_to_ceiling_height_m": 2.9579361401021704
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "电采暖"
+        },
+        "cooling": {
+          "primary_type": "冷水机组"
+        },
+        "water_heating": {
+          "primary_type": "无集中热水"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": false,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 358330,
+            "natural_gas_m3": 1068,
+            "water_m3": 1020
+          },
+          "2024-02": {
+            "electricity_kwh": 412145,
+            "natural_gas_m3": 3219,
+            "water_m3": 572
+          },
+          "2024-03": {
+            "electricity_kwh": 266006,
+            "natural_gas_m3": 2412,
+            "water_m3": 654
+          },
+          "2024-04": {
+            "electricity_kwh": 214219,
+            "natural_gas_m3": 2566,
+            "water_m3": 812
+          },
+          "2024-05": {
+            "electricity_kwh": 223960,
+            "natural_gas_m3": 3671,
+            "water_m3": 852
+          },
+          "2024-06": {
+            "electricity_kwh": 350802,
+            "natural_gas_m3": 3188,
+            "water_m3": 582
+          },
+          "2024-07": {
+            "electricity_kwh": 351535,
+            "natural_gas_m3": 2509,
+            "water_m3": 669
+          },
+          "2024-08": {
+            "electricity_kwh": 337146,
+            "natural_gas_m3": 1949,
+            "water_m3": 1442
+          },
+          "2024-09": {
+            "electricity_kwh": 272388,
+            "natural_gas_m3": 2255,
+            "water_m3": 1372
+          },
+          "2024-10": {
+            "electricity_kwh": 228903,
+            "natural_gas_m3": 959,
+            "water_m3": 797
+          },
+          "2024-11": {
+            "electricity_kwh": 276796,
+            "natural_gas_m3": 3326,
+            "water_m3": 1006
+          },
+          "2024-12": {
+            "electricity_kwh": 384187,
+            "natural_gas_m3": 2449,
+            "water_m3": 1445
+          }
+        }
+      }
+    },
+    "B011": {
+      "basic_info": {
+        "name": "科技孵化器011栋",
+        "building_type": "科研建筑",
+        "region": "东北地区",
+        "floor_area_sqm": 18400,
+        "num_floors": 4,
+        "num_basements": 2,
+        "year_built": 2001,
+        "num_employees": 717,
+        "weekly_operating_hours": 50
+      },
+      "building_structure": {
+        "wall_construction": "混凝土",
+        "roof_construction": "混凝土平顶",
+        "roof_type": "锯齿形",
+        "building_shape": "U形",
+        "glass_percentage": 22.8,
+        "floor_to_ceiling_height_m": 3.3484582734766173
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "集中供暖"
+        },
+        "cooling": {
+          "primary_type": "VRV多联机"
+        },
+        "water_heating": {
+          "primary_type": "天然气热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 638201,
+            "natural_gas_m3": 16818,
+            "water_m3": 1190
+          },
+          "2024-02": {
+            "electricity_kwh": 712284,
+            "natural_gas_m3": 17954,
+            "water_m3": 889
+          },
+          "2024-03": {
+            "electricity_kwh": 485839,
+            "natural_gas_m3": 15421,
+            "water_m3": 1035
+          },
+          "2024-04": {
+            "electricity_kwh": 420314,
+            "natural_gas_m3": 1649,
+            "water_m3": 1439
+          },
+          "2024-05": {
+            "electricity_kwh": 408938,
+            "natural_gas_m3": 1416,
+            "water_m3": 1416
+          },
+          "2024-06": {
+            "electricity_kwh": 432145,
+            "natural_gas_m3": 1752,
+            "water_m3": 1061
+          },
+          "2024-07": {
+            "electricity_kwh": 511762,
+            "natural_gas_m3": 3386,
+            "water_m3": 1140
+          },
+          "2024-08": {
+            "electricity_kwh": 558632,
+            "natural_gas_m3": 1350,
+            "water_m3": 377
+          },
+          "2024-09": {
+            "electricity_kwh": 378787,
+            "natural_gas_m3": 2785,
+            "water_m3": 830
+          },
+          "2024-10": {
+            "electricity_kwh": 379900,
+            "natural_gas_m3": 2240,
+            "water_m3": 1290
+          },
+          "2024-11": {
+            "electricity_kwh": 462387,
+            "natural_gas_m3": 18026,
+            "water_m3": 1460
+          },
+          "2024-12": {
+            "electricity_kwh": 560728,
+            "natural_gas_m3": 20513,
+            "water_m3": 440
+          }
+        }
+      }
+    },
+    "B012": {
+      "basic_info": {
+        "name": "研究院大楼012",
+        "building_type": "科研建筑",
+        "region": "西南地区",
+        "floor_area_sqm": 15016,
+        "num_floors": 7,
+        "num_basements": 2,
+        "year_built": 1997,
+        "num_employees": 225,
+        "weekly_operating_hours": 37
+      },
+      "building_structure": {
+        "wall_construction": "砖墙",
+        "roof_construction": "绿色屋顶",
+        "roof_type": "锯齿形",
+        "building_shape": "L形",
+        "glass_percentage": 36.0,
+        "floor_to_ceiling_height_m": 4.297363495715821
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "无供暖"
+        },
+        "cooling": {
+          "primary_type": "冷水机组"
+        },
+        "water_heating": {
+          "primary_type": "太阳能热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": false,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 322883,
+            "natural_gas_m3": 1153,
+            "water_m3": 560
+          },
+          "2024-02": {
+            "electricity_kwh": 254760,
+            "natural_gas_m3": 3002,
+            "water_m3": 385
+          },
+          "2024-03": {
+            "electricity_kwh": 249848,
+            "natural_gas_m3": 1581,
+            "water_m3": 997
+          },
+          "2024-04": {
+            "electricity_kwh": 204282,
+            "natural_gas_m3": 2209,
+            "water_m3": 308
+          },
+          "2024-05": {
+            "electricity_kwh": 191351,
+            "natural_gas_m3": 2902,
+            "water_m3": 584
+          },
+          "2024-06": {
+            "electricity_kwh": 219801,
+            "natural_gas_m3": 2707,
+            "water_m3": 665
+          },
+          "2024-07": {
+            "electricity_kwh": 270278,
+            "natural_gas_m3": 2091,
+            "water_m3": 811
+          },
+          "2024-08": {
+            "electricity_kwh": 276826,
+            "natural_gas_m3": 2635,
+            "water_m3": 1044
+          },
+          "2024-09": {
+            "electricity_kwh": 185720,
+            "natural_gas_m3": 900,
+            "water_m3": 1186
+          },
+          "2024-10": {
+            "electricity_kwh": 158652,
+            "natural_gas_m3": 2125,
+            "water_m3": 1033
+          },
+          "2024-11": {
+            "electricity_kwh": 216991,
+            "natural_gas_m3": 2339,
+            "water_m3": 400
+          },
+          "2024-12": {
+            "electricity_kwh": 238875,
+            "natural_gas_m3": 1360,
+            "water_m3": 609
+          }
+        }
+      }
+    },
+    "B013": {
+      "basic_info": {
+        "name": "实验基地013区",
+        "building_type": "科研建筑",
+        "region": "东北地区",
+        "floor_area_sqm": 7339,
+        "num_floors": 8,
+        "num_basements": 1,
+        "year_built": 2010,
+        "num_employees": 249,
+        "weekly_operating_hours": 40
+      },
+      "building_structure": {
+        "wall_construction": "砖墙",
+        "roof_construction": "瓦片屋顶",
+        "roof_type": "锯齿形",
+        "building_shape": "L形",
+        "glass_percentage": 27.1,
+        "floor_to_ceiling_height_m": 4.272896342631478
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "集中供暖"
+        },
+        "cooling": {
+          "primary_type": "VRV多联机"
+        },
+        "water_heating": {
+          "primary_type": "热泵热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 222339,
+            "natural_gas_m3": 6176,
+            "water_m3": 495
+          },
+          "2024-02": {
+            "electricity_kwh": 241345,
+            "natural_gas_m3": 4226,
+            "water_m3": 581
+          },
+          "2024-03": {
+            "electricity_kwh": 193712,
+            "natural_gas_m3": 7601,
+            "water_m3": 221
+          },
+          "2024-04": {
+            "electricity_kwh": 158586,
+            "natural_gas_m3": 679,
+            "water_m3": 318
+          },
+          "2024-05": {
+            "electricity_kwh": 176198,
+            "natural_gas_m3": 709,
+            "water_m3": 567
+          },
+          "2024-06": {
+            "electricity_kwh": 182003,
+            "natural_gas_m3": 529,
+            "water_m3": 244
+          },
+          "2024-07": {
+            "electricity_kwh": 215676,
+            "natural_gas_m3": 500,
+            "water_m3": 302
+          },
+          "2024-08": {
+            "electricity_kwh": 238969,
+            "natural_gas_m3": 1392,
+            "water_m3": 160
+          },
+          "2024-09": {
+            "electricity_kwh": 190479,
+            "natural_gas_m3": 1211,
+            "water_m3": 179
+          },
+          "2024-10": {
+            "electricity_kwh": 155558,
+            "natural_gas_m3": 549,
+            "water_m3": 544
+          },
+          "2024-11": {
+            "electricity_kwh": 166979,
+            "natural_gas_m3": 6693,
+            "water_m3": 214
+          },
+          "2024-12": {
+            "electricity_kwh": 235164,
+            "natural_gas_m3": 4394,
+            "water_m3": 459
+          }
+        }
+      }
+    },
+    "B014": {
+      "basic_info": {
+        "name": "公寓楼014栋",
+        "building_type": "居住建筑",
+        "region": "南方地区",
+        "floor_area_sqm": 5105,
+        "num_floors": 15,
+        "num_basements": 0,
+        "year_built": 2012,
+        "num_employees": 617,
+        "weekly_operating_hours": 32
+      },
+      "building_structure": {
+        "wall_construction": "钢结构",
+        "roof_construction": "混凝土平顶",
+        "roof_type": "锯齿形",
+        "building_shape": "L形",
+        "glass_percentage": 32.9,
+        "floor_to_ceiling_height_m": 3.1560019816720764
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "天然气锅炉"
+        },
+        "cooling": {
+          "primary_type": "冷水机组"
+        },
+        "water_heating": {
+          "primary_type": "太阳能热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 67551,
+            "natural_gas_m3": 613,
+            "water_m3": 341
+          },
+          "2024-02": {
+            "electricity_kwh": 60390,
+            "natural_gas_m3": 828,
+            "water_m3": 294
+          },
+          "2024-03": {
+            "electricity_kwh": 53705,
+            "natural_gas_m3": 820,
+            "water_m3": 279
+          },
+          "2024-04": {
+            "electricity_kwh": 44957,
+            "natural_gas_m3": 476,
+            "water_m3": 255
+          },
+          "2024-05": {
+            "electricity_kwh": 35961,
+            "natural_gas_m3": 363,
+            "water_m3": 269
+          },
+          "2024-06": {
+            "electricity_kwh": 45850,
+            "natural_gas_m3": 510,
+            "water_m3": 172
+          },
+          "2024-07": {
+            "electricity_kwh": 53071,
+            "natural_gas_m3": 528,
+            "water_m3": 408
+          },
+          "2024-08": {
+            "electricity_kwh": 55010,
+            "natural_gas_m3": 572,
+            "water_m3": 186
+          },
+          "2024-09": {
+            "electricity_kwh": 39055,
+            "natural_gas_m3": 708,
+            "water_m3": 295
+          },
+          "2024-10": {
+            "electricity_kwh": 36918,
+            "natural_gas_m3": 634,
+            "water_m3": 352
+          },
+          "2024-11": {
+            "electricity_kwh": 41086,
+            "natural_gas_m3": 323,
+            "water_m3": 282
+          },
+          "2024-12": {
+            "electricity_kwh": 64759,
+            "natural_gas_m3": 946,
+            "water_m3": 345
+          }
+        }
+      }
+    },
+    "B015": {
+      "basic_info": {
+        "name": "人才公寓015",
+        "building_type": "居住建筑",
+        "region": "华东地区",
+        "floor_area_sqm": 10677,
+        "num_floors": 15,
+        "num_basements": 0,
+        "year_built": 2010,
+        "num_employees": 1420,
+        "weekly_operating_hours": 48
+      },
+      "building_structure": {
+        "wall_construction": "木结构",
+        "roof_construction": "绿色屋顶",
+        "roof_type": "坡顶",
+        "building_shape": "圆形",
+        "glass_percentage": 35.0,
+        "floor_to_ceiling_height_m": 3.1238745527747325
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "天然气锅炉"
+        },
+        "cooling": {
+          "primary_type": "分体空调"
+        },
+        "water_heating": {
+          "primary_type": "电热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 168055,
+            "natural_gas_m3": 2041,
+            "water_m3": 712
+          },
+          "2024-02": {
+            "electricity_kwh": 157719,
+            "natural_gas_m3": 1144,
+            "water_m3": 396
+          },
+          "2024-03": {
+            "electricity_kwh": 134919,
+            "natural_gas_m3": 689,
+            "water_m3": 520
+          },
+          "2024-04": {
+            "electricity_kwh": 105577,
+            "natural_gas_m3": 1112,
+            "water_m3": 722
+          },
+          "2024-05": {
+            "electricity_kwh": 97510,
+            "natural_gas_m3": 1417,
+            "water_m3": 674
+          },
+          "2024-06": {
+            "electricity_kwh": 121763,
+            "natural_gas_m3": 2052,
+            "water_m3": 577
+          },
+          "2024-07": {
+            "electricity_kwh": 124604,
+            "natural_gas_m3": 637,
+            "water_m3": 742
+          },
+          "2024-08": {
+            "electricity_kwh": 137986,
+            "natural_gas_m3": 1455,
+            "water_m3": 484
+          },
+          "2024-09": {
+            "electricity_kwh": 114902,
+            "natural_gas_m3": 1134,
+            "water_m3": 520
+          },
+          "2024-10": {
+            "electricity_kwh": 104165,
+            "natural_gas_m3": 1234,
+            "water_m3": 768
+          },
+          "2024-11": {
+            "electricity_kwh": 114501,
+            "natural_gas_m3": 1070,
+            "water_m3": 569
+          },
+          "2024-12": {
+            "electricity_kwh": 134609,
+            "natural_gas_m3": 1208,
+            "water_m3": 563
+          }
+        }
+      }
+    },
+    "B016": {
+      "basic_info": {
+        "name": "住宅小区016号楼",
+        "building_type": "居住建筑",
+        "region": "西北地区",
+        "floor_area_sqm": 5119,
+        "num_floors": 16,
+        "num_basements": 2,
+        "year_built": 1999,
+        "num_employees": 865,
+        "weekly_operating_hours": 43
+      },
+      "building_structure": {
+        "wall_construction": "钢结构",
+        "roof_construction": "玻璃顶",
+        "roof_type": "穹顶",
+        "building_shape": "矩形",
+        "glass_percentage": 25.2,
+        "floor_to_ceiling_height_m": 2.9566705808684883
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "集中供暖"
+        },
+        "cooling": {
+          "primary_type": "中央空调"
+        },
+        "water_heating": {
+          "primary_type": "热泵热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 103899,
+            "natural_gas_m3": 4561,
+            "water_m3": 393
+          },
+          "2024-02": {
+            "electricity_kwh": 108769,
+            "natural_gas_m3": 3439,
+            "water_m3": 182
+          },
+          "2024-03": {
+            "electricity_kwh": 75316,
+            "natural_gas_m3": 3383,
+            "water_m3": 236
+          },
+          "2024-04": {
+            "electricity_kwh": 74028,
+            "natural_gas_m3": 293,
+            "water_m3": 251
+          },
+          "2024-05": {
+            "electricity_kwh": 61120,
+            "natural_gas_m3": 507,
+            "water_m3": 325
+          },
+          "2024-06": {
+            "electricity_kwh": 88090,
+            "natural_gas_m3": 344,
+            "water_m3": 376
+          },
+          "2024-07": {
+            "electricity_kwh": 95353,
+            "natural_gas_m3": 366,
+            "water_m3": 383
+          },
+          "2024-08": {
+            "electricity_kwh": 86108,
+            "natural_gas_m3": 727,
+            "water_m3": 322
+          },
+          "2024-09": {
+            "electricity_kwh": 73696,
+            "natural_gas_m3": 957,
+            "water_m3": 397
+          },
+          "2024-10": {
+            "electricity_kwh": 55869,
+            "natural_gas_m3": 681,
+            "water_m3": 143
+          },
+          "2024-11": {
+            "electricity_kwh": 85399,
+            "natural_gas_m3": 6125,
+            "water_m3": 187
+          },
+          "2024-12": {
+            "electricity_kwh": 96583,
+            "natural_gas_m3": 2588,
+            "water_m3": 333
+          }
+        }
+      }
+    },
+    "B017": {
+      "basic_info": {
+        "name": "社区住宅017单元",
+        "building_type": "居住建筑",
+        "region": "北方地区",
+        "floor_area_sqm": 8658,
+        "num_floors": 8,
+        "num_basements": 0,
+        "year_built": 2004,
+        "num_employees": 935,
+        "weekly_operating_hours": 50
+      },
+      "building_structure": {
+        "wall_construction": "复合结构",
+        "roof_construction": "瓦片屋顶",
+        "roof_type": "穹顶",
+        "building_shape": "L形",
+        "glass_percentage": 26.8,
+        "floor_to_ceiling_height_m": 3.58925567620473
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "集中供暖"
+        },
+        "cooling": {
+          "primary_type": "VRV多联机"
+        },
+        "water_heating": {
+          "primary_type": "电热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 174426,
+            "natural_gas_m3": 8536,
+            "water_m3": 383
+          },
+          "2024-02": {
+            "electricity_kwh": 132731,
+            "natural_gas_m3": 8933,
+            "water_m3": 642
+          },
+          "2024-03": {
+            "electricity_kwh": 114622,
+            "natural_gas_m3": 4415,
+            "water_m3": 613
+          },
+          "2024-04": {
+            "electricity_kwh": 93258,
+            "natural_gas_m3": 1057,
+            "water_m3": 636
+          },
+          "2024-05": {
+            "electricity_kwh": 94545,
+            "natural_gas_m3": 851,
+            "water_m3": 450
+          },
+          "2024-06": {
+            "electricity_kwh": 106901,
+            "natural_gas_m3": 760,
+            "water_m3": 358
+          },
+          "2024-07": {
+            "electricity_kwh": 157422,
+            "natural_gas_m3": 1606,
+            "water_m3": 437
+          },
+          "2024-08": {
+            "electricity_kwh": 142512,
+            "natural_gas_m3": 1392,
+            "water_m3": 272
+          },
+          "2024-09": {
+            "electricity_kwh": 99503,
+            "natural_gas_m3": 1653,
+            "water_m3": 349
+          },
+          "2024-10": {
+            "electricity_kwh": 105315,
+            "natural_gas_m3": 1090,
+            "water_m3": 230
+          },
+          "2024-11": {
+            "electricity_kwh": 109937,
+            "natural_gas_m3": 7196,
+            "water_m3": 669
+          },
+          "2024-12": {
+            "electricity_kwh": 150850,
+            "natural_gas_m3": 9915,
+            "water_m3": 546
+          }
+        }
+      }
+    },
+    "B018": {
+      "basic_info": {
+        "name": "人才公寓018",
+        "building_type": "居住建筑",
+        "region": "华东地区",
+        "floor_area_sqm": 11430,
+        "num_floors": 9,
+        "num_basements": 0,
+        "year_built": 2023,
+        "num_employees": 3120,
+        "weekly_operating_hours": 44
+      },
+      "building_structure": {
+        "wall_construction": "砖墙",
+        "roof_construction": "混凝土平顶",
+        "roof_type": "穹顶",
+        "building_shape": "不规则形状",
+        "glass_percentage": 21.5,
+        "floor_to_ceiling_height_m": 2.982594950204769
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "电采暖"
+        },
+        "cooling": {
+          "primary_type": "中央空调"
+        },
+        "water_heating": {
+          "primary_type": "热泵热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": false,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 161386,
+            "natural_gas_m3": 575,
+            "water_m3": 354
+          },
+          "2024-02": {
+            "electricity_kwh": 138234,
+            "natural_gas_m3": 2090,
+            "water_m3": 320
+          },
+          "2024-03": {
+            "electricity_kwh": 118176,
+            "natural_gas_m3": 1187,
+            "water_m3": 779
+          },
+          "2024-04": {
+            "electricity_kwh": 108403,
+            "natural_gas_m3": 1554,
+            "water_m3": 278
+          },
+          "2024-05": {
+            "electricity_kwh": 106560,
+            "natural_gas_m3": 2276,
+            "water_m3": 248
+          },
+          "2024-06": {
+            "electricity_kwh": 132834,
+            "natural_gas_m3": 1371,
+            "water_m3": 394
+          },
+          "2024-07": {
+            "electricity_kwh": 151335,
+            "natural_gas_m3": 1616,
+            "water_m3": 540
+          },
+          "2024-08": {
+            "electricity_kwh": 127347,
+            "natural_gas_m3": 620,
+            "water_m3": 738
+          },
+          "2024-09": {
+            "electricity_kwh": 107498,
+            "natural_gas_m3": 935,
+            "water_m3": 879
+          },
+          "2024-10": {
+            "electricity_kwh": 94459,
+            "natural_gas_m3": 599,
+            "water_m3": 853
+          },
+          "2024-11": {
+            "electricity_kwh": 123384,
+            "natural_gas_m3": 2209,
+            "water_m3": 770
+          },
+          "2024-12": {
+            "electricity_kwh": 143980,
+            "natural_gas_m3": 1524,
+            "water_m3": 793
+          }
+        }
+      }
+    },
+    "B019": {
+      "basic_info": {
+        "name": "运动场配套楼019",
+        "building_type": "体育建筑",
+        "region": "华中地区",
+        "floor_area_sqm": 22301,
+        "num_floors": 3,
+        "num_basements": 1,
+        "year_built": 2018,
+        "num_employees": 267,
+        "weekly_operating_hours": 52
+      },
+      "building_structure": {
+        "wall_construction": "玻璃幕墙",
+        "roof_construction": "瓦片屋顶",
+        "roof_type": "锯齿形",
+        "building_shape": "不规则形状",
+        "glass_percentage": 19.6,
+        "floor_to_ceiling_height_m": 3.855314713200478
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "电采暖"
+        },
+        "cooling": {
+          "primary_type": "分体空调"
+        },
+        "water_heating": {
+          "primary_type": "热泵热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": false,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 268401,
+            "natural_gas_m3": 4156,
+            "water_m3": 1673
+          },
+          "2024-02": {
+            "electricity_kwh": 240010,
+            "natural_gas_m3": 1593,
+            "water_m3": 496
+          },
+          "2024-03": {
+            "electricity_kwh": 189750,
+            "natural_gas_m3": 2539,
+            "water_m3": 1216
+          },
+          "2024-04": {
+            "electricity_kwh": 169729,
+            "natural_gas_m3": 4193,
+            "water_m3": 1338
+          },
+          "2024-05": {
+            "electricity_kwh": 177875,
+            "natural_gas_m3": 1756,
+            "water_m3": 938
+          },
+          "2024-06": {
+            "electricity_kwh": 193410,
+            "natural_gas_m3": 3070,
+            "water_m3": 645
+          },
+          "2024-07": {
+            "electricity_kwh": 265500,
+            "natural_gas_m3": 3410,
+            "water_m3": 530
+          },
+          "2024-08": {
+            "electricity_kwh": 241125,
+            "natural_gas_m3": 2138,
+            "water_m3": 939
+          },
+          "2024-09": {
+            "electricity_kwh": 191476,
+            "natural_gas_m3": 3352,
+            "water_m3": 1326
+          },
+          "2024-10": {
+            "electricity_kwh": 186465,
+            "natural_gas_m3": 4100,
+            "water_m3": 1731
+          },
+          "2024-11": {
+            "electricity_kwh": 181158,
+            "natural_gas_m3": 2768,
+            "water_m3": 1158
+          },
+          "2024-12": {
+            "electricity_kwh": 235361,
+            "natural_gas_m3": 3649,
+            "water_m3": 1643
+          }
+        }
+      }
+    },
+    "B020": {
+      "basic_info": {
+        "name": "运动场配套楼020",
+        "building_type": "体育建筑",
+        "region": "南方地区",
+        "floor_area_sqm": 7178,
+        "num_floors": 1,
+        "num_basements": 0,
+        "year_built": 2021,
+        "num_employees": 143,
+        "weekly_operating_hours": 57
+      },
+      "building_structure": {
+        "wall_construction": "砖墙",
+        "roof_construction": "玻璃顶",
+        "roof_type": "穹顶",
+        "building_shape": "U形",
+        "glass_percentage": 35.9,
+        "floor_to_ceiling_height_m": 4.189118540307905
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "无供暖"
+        },
+        "cooling": {
+          "primary_type": "VRV多联机"
+        },
+        "water_heating": {
+          "primary_type": "集中热水系统"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": false,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 64080,
+            "natural_gas_m3": 1138,
+            "water_m3": 492
+          },
+          "2024-02": {
+            "electricity_kwh": 78107,
+            "natural_gas_m3": 1309,
+            "water_m3": 557
+          },
+          "2024-03": {
+            "electricity_kwh": 52656,
+            "natural_gas_m3": 1227,
+            "water_m3": 184
+          },
+          "2024-04": {
+            "electricity_kwh": 46326,
+            "natural_gas_m3": 366,
+            "water_m3": 365
+          },
+          "2024-05": {
+            "electricity_kwh": 46476,
+            "natural_gas_m3": 1039,
+            "water_m3": 529
+          },
+          "2024-06": {
+            "electricity_kwh": 63155,
+            "natural_gas_m3": 878,
+            "water_m3": 384
+          },
+          "2024-07": {
+            "electricity_kwh": 59960,
+            "natural_gas_m3": 957,
+            "water_m3": 567
+          },
+          "2024-08": {
+            "electricity_kwh": 59626,
+            "natural_gas_m3": 988,
+            "water_m3": 516
+          },
+          "2024-09": {
+            "electricity_kwh": 50823,
+            "natural_gas_m3": 640,
+            "water_m3": 532
+          },
+          "2024-10": {
+            "electricity_kwh": 40834,
+            "natural_gas_m3": 589,
+            "water_m3": 442
+          },
+          "2024-11": {
+            "electricity_kwh": 56558,
+            "natural_gas_m3": 362,
+            "water_m3": 221
+          },
+          "2024-12": {
+            "electricity_kwh": 69141,
+            "natural_gas_m3": 461,
+            "water_m3": 487
+          }
+        }
+      }
+    },
+    "B021": {
+      "basic_info": {
+        "name": "健身中心021",
+        "building_type": "体育建筑",
+        "region": "北方地区",
+        "floor_area_sqm": 21787,
+        "num_floors": 2,
+        "num_basements": 1,
+        "year_built": 2017,
+        "num_employees": 261,
+        "weekly_operating_hours": 32
+      },
+      "building_structure": {
+        "wall_construction": "木结构",
+        "roof_construction": "瓦片屋顶",
+        "roof_type": "锯齿形",
+        "building_shape": "L形",
+        "glass_percentage": 24.6,
+        "floor_to_ceiling_height_m": 4.266153770229504
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "天然气锅炉"
+        },
+        "cooling": {
+          "primary_type": "VRV多联机"
+        },
+        "water_heating": {
+          "primary_type": "无集中热水"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 350503,
+            "natural_gas_m3": 25270,
+            "water_m3": 836
+          },
+          "2024-02": {
+            "electricity_kwh": 313118,
+            "natural_gas_m3": 24564,
+            "water_m3": 1262
+          },
+          "2024-03": {
+            "electricity_kwh": 269867,
+            "natural_gas_m3": 14370,
+            "water_m3": 526
+          },
+          "2024-04": {
+            "electricity_kwh": 208376,
+            "natural_gas_m3": 3290,
+            "water_m3": 1607
+          },
+          "2024-05": {
+            "electricity_kwh": 176983,
+            "natural_gas_m3": 1853,
+            "water_m3": 516
+          },
+          "2024-06": {
+            "electricity_kwh": 223439,
+            "natural_gas_m3": 3966,
+            "water_m3": 463
+          },
+          "2024-07": {
+            "electricity_kwh": 318351,
+            "natural_gas_m3": 3774,
+            "water_m3": 1000
+          },
+          "2024-08": {
+            "electricity_kwh": 297996,
+            "natural_gas_m3": 2461,
+            "water_m3": 667
+          },
+          "2024-09": {
+            "electricity_kwh": 206065,
+            "natural_gas_m3": 2409,
+            "water_m3": 1602
+          },
+          "2024-10": {
+            "electricity_kwh": 198662,
+            "natural_gas_m3": 3881,
+            "water_m3": 1235
+          },
+          "2024-11": {
+            "electricity_kwh": 257600,
+            "natural_gas_m3": 22887,
+            "water_m3": 476
+          },
+          "2024-12": {
+            "electricity_kwh": 338764,
+            "natural_gas_m3": 23139,
+            "water_m3": 1544
+          }
+        }
+      }
+    },
+    "B022": {
+      "basic_info": {
+        "name": "健身中心022",
+        "building_type": "体育建筑",
+        "region": "北方地区",
+        "floor_area_sqm": 17553,
+        "num_floors": 2,
+        "num_basements": 1,
+        "year_built": 2010,
+        "num_employees": 87,
+        "weekly_operating_hours": 55
+      },
+      "building_structure": {
+        "wall_construction": "复合结构",
+        "roof_construction": "金属屋面",
+        "roof_type": "平顶",
+        "building_shape": "矩形",
+        "glass_percentage": 36.2,
+        "floor_to_ceiling_height_m": 4.233336106799904
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "天然气锅炉"
+        },
+        "cooling": {
+          "primary_type": "中央空调"
+        },
+        "water_heating": {
+          "primary_type": "太阳能热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 268328,
+            "natural_gas_m3": 13174,
+            "water_m3": 1058
+          },
+          "2024-02": {
+            "electricity_kwh": 223257,
+            "natural_gas_m3": 14276,
+            "water_m3": 692
+          },
+          "2024-03": {
+            "electricity_kwh": 221068,
+            "natural_gas_m3": 19936,
+            "water_m3": 429
+          },
+          "2024-04": {
+            "electricity_kwh": 146156,
+            "natural_gas_m3": 1635,
+            "water_m3": 815
+          },
+          "2024-05": {
+            "electricity_kwh": 177739,
+            "natural_gas_m3": 1563,
+            "water_m3": 1112
+          },
+          "2024-06": {
+            "electricity_kwh": 199873,
+            "natural_gas_m3": 2062,
+            "water_m3": 1354
+          },
+          "2024-07": {
+            "electricity_kwh": 266483,
+            "natural_gas_m3": 2253,
+            "water_m3": 735
+          },
+          "2024-08": {
+            "electricity_kwh": 218663,
+            "natural_gas_m3": 3466,
+            "water_m3": 610
+          },
+          "2024-09": {
+            "electricity_kwh": 157043,
+            "natural_gas_m3": 2220,
+            "water_m3": 374
+          },
+          "2024-10": {
+            "electricity_kwh": 175937,
+            "natural_gas_m3": 2490,
+            "water_m3": 1368
+          },
+          "2024-11": {
+            "electricity_kwh": 173958,
+            "natural_gas_m3": 10994,
+            "water_m3": 1050
+          },
+          "2024-12": {
+            "electricity_kwh": 282377,
+            "natural_gas_m3": 14499,
+            "water_m3": 1025
+          }
+        }
+      }
+    },
+    "B023": {
+      "basic_info": {
+        "name": "体育馆023号馆",
+        "building_type": "体育建筑",
+        "region": "西南地区",
+        "floor_area_sqm": 28383,
+        "num_floors": 1,
+        "num_basements": 0,
+        "year_built": 1993,
+        "num_employees": 510,
+        "weekly_operating_hours": 48
+      },
+      "building_structure": {
+        "wall_construction": "钢结构",
+        "roof_construction": "金属屋面",
+        "roof_type": "坡顶",
+        "building_shape": "L形",
+        "glass_percentage": 31.3,
+        "floor_to_ceiling_height_m": 3.310700161807624
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "热泵"
+        },
+        "cooling": {
+          "primary_type": "冷水机组"
+        },
+        "water_heating": {
+          "primary_type": "集中热水系统"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 243327,
+            "natural_gas_m3": 4320,
+            "water_m3": 739
+          },
+          "2024-02": {
+            "electricity_kwh": 293772,
+            "natural_gas_m3": 3153,
+            "water_m3": 1115
+          },
+          "2024-03": {
+            "electricity_kwh": 196945,
+            "natural_gas_m3": 4052,
+            "water_m3": 2005
+          },
+          "2024-04": {
+            "electricity_kwh": 194385,
+            "natural_gas_m3": 1967,
+            "water_m3": 995
+          },
+          "2024-05": {
+            "electricity_kwh": 180831,
+            "natural_gas_m3": 5513,
+            "water_m3": 764
+          },
+          "2024-06": {
+            "electricity_kwh": 236368,
+            "natural_gas_m3": 5401,
+            "water_m3": 1535
+          },
+          "2024-07": {
+            "electricity_kwh": 214885,
+            "natural_gas_m3": 4202,
+            "water_m3": 1819
+          },
+          "2024-08": {
+            "electricity_kwh": 210296,
+            "natural_gas_m3": 5409,
+            "water_m3": 1409
+          },
+          "2024-09": {
+            "electricity_kwh": 212827,
+            "natural_gas_m3": 1579,
+            "water_m3": 881
+          },
+          "2024-10": {
+            "electricity_kwh": 160330,
+            "natural_gas_m3": 1998,
+            "water_m3": 1384
+          },
+          "2024-11": {
+            "electricity_kwh": 191968,
+            "natural_gas_m3": 3732,
+            "water_m3": 2204
+          },
+          "2024-12": {
+            "electricity_kwh": 247057,
+            "natural_gas_m3": 3711,
+            "water_m3": 1016
+          }
+        }
+      }
+    },
+    "B024": {
+      "basic_info": {
+        "name": "科技园024号楼",
+        "building_type": "办公建筑",
+        "region": "东北地区",
+        "floor_area_sqm": 3551,
+        "num_floors": 11,
+        "num_basements": 1,
+        "year_built": 1992,
+        "num_employees": 305,
+        "weekly_operating_hours": 59
+      },
+      "building_structure": {
+        "wall_construction": "复合结构",
+        "roof_construction": "金属屋面",
+        "roof_type": "坡顶",
+        "building_shape": "U形",
+        "glass_percentage": 52.5,
+        "floor_to_ceiling_height_m": 3.1272581910892243
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "区域供热"
+        },
+        "cooling": {
+          "primary_type": "分体空调"
+        },
+        "water_heating": {
+          "primary_type": "天然气热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 93079,
+            "natural_gas_m3": 4082,
+            "water_m3": 237
+          },
+          "2024-02": {
+            "electricity_kwh": 104219,
+            "natural_gas_m3": 3180,
+            "water_m3": 119
+          },
+          "2024-03": {
+            "electricity_kwh": 67667,
+            "natural_gas_m3": 3663,
+            "water_m3": 266
+          },
+          "2024-04": {
+            "electricity_kwh": 56522,
+            "natural_gas_m3": 703,
+            "water_m3": 146
+          },
+          "2024-05": {
+            "electricity_kwh": 57283,
+            "natural_gas_m3": 527,
+            "water_m3": 200
+          },
+          "2024-06": {
+            "electricity_kwh": 73749,
+            "natural_gas_m3": 508,
+            "water_m3": 100
+          },
+          "2024-07": {
+            "electricity_kwh": 81155,
+            "natural_gas_m3": 468,
+            "water_m3": 239
+          },
+          "2024-08": {
+            "electricity_kwh": 93715,
+            "natural_gas_m3": 614,
+            "water_m3": 97
+          },
+          "2024-09": {
+            "electricity_kwh": 68252,
+            "natural_gas_m3": 650,
+            "water_m3": 278
+          },
+          "2024-10": {
+            "electricity_kwh": 60130,
+            "natural_gas_m3": 282,
+            "water_m3": 168
+          },
+          "2024-11": {
+            "electricity_kwh": 83471,
+            "natural_gas_m3": 3399,
+            "water_m3": 167
+          },
+          "2024-12": {
+            "electricity_kwh": 101069,
+            "natural_gas_m3": 2436,
+            "water_m3": 185
+          }
+        }
+      }
+    },
+    "B025": {
+      "basic_info": {
+        "name": "写字楼025大厦",
+        "building_type": "办公建筑",
+        "region": "西北地区",
+        "floor_area_sqm": 42889,
+        "num_floors": 14,
+        "num_basements": 0,
+        "year_built": 2004,
+        "num_employees": 1286,
+        "weekly_operating_hours": 50
+      },
+      "building_structure": {
+        "wall_construction": "玻璃幕墙",
+        "roof_construction": "玻璃顶",
+        "roof_type": "平顶",
+        "building_shape": "不规则形状",
+        "glass_percentage": 42.5,
+        "floor_to_ceiling_height_m": 4.258413039432199
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "集中供暖"
+        },
+        "cooling": {
+          "primary_type": "中央空调"
+        },
+        "water_heating": {
+          "primary_type": "电热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 966308,
+            "natural_gas_m3": 42299,
+            "water_m3": 919
+          },
+          "2024-02": {
+            "electricity_kwh": 1167144,
+            "natural_gas_m3": 44554,
+            "water_m3": 1574
+          },
+          "2024-03": {
+            "electricity_kwh": 996021,
+            "natural_gas_m3": 23511,
+            "water_m3": 1853
+          },
+          "2024-04": {
+            "electricity_kwh": 644502,
+            "natural_gas_m3": 3987,
+            "water_m3": 3421
+          },
+          "2024-05": {
+            "electricity_kwh": 639416,
+            "natural_gas_m3": 7996,
+            "water_m3": 2087
+          },
+          "2024-06": {
+            "electricity_kwh": 882098,
+            "natural_gas_m3": 4546,
+            "water_m3": 2849
+          },
+          "2024-07": {
+            "electricity_kwh": 968134,
+            "natural_gas_m3": 5548,
+            "water_m3": 1321
+          },
+          "2024-08": {
+            "electricity_kwh": 848781,
+            "natural_gas_m3": 7280,
+            "water_m3": 971
+          },
+          "2024-09": {
+            "electricity_kwh": 737408,
+            "natural_gas_m3": 6026,
+            "water_m3": 2396
+          },
+          "2024-10": {
+            "electricity_kwh": 597057,
+            "natural_gas_m3": 8422,
+            "water_m3": 2362
+          },
+          "2024-11": {
+            "electricity_kwh": 887218,
+            "natural_gas_m3": 50364,
+            "water_m3": 3242
+          },
+          "2024-12": {
+            "electricity_kwh": 996279,
+            "natural_gas_m3": 45038,
+            "water_m3": 2479
+          }
+        }
+      }
+    },
+    "B026": {
+      "basic_info": {
+        "name": "写字楼026大厦",
+        "building_type": "办公建筑",
+        "region": "南方地区",
+        "floor_area_sqm": 10739,
+        "num_floors": 24,
+        "num_basements": 1,
+        "year_built": 2022,
+        "num_employees": 547,
+        "weekly_operating_hours": 54
+      },
+      "building_structure": {
+        "wall_construction": "复合结构",
+        "roof_construction": "金属屋面",
+        "roof_type": "穹顶",
+        "building_shape": "U形",
+        "glass_percentage": 67.2,
+        "floor_to_ceiling_height_m": 3.0997154053653646
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "天然气锅炉"
+        },
+        "cooling": {
+          "primary_type": "VRV多联机"
+        },
+        "water_heating": {
+          "primary_type": "无集中热水"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 164194,
+            "natural_gas_m3": 1081,
+            "water_m3": 482
+          },
+          "2024-02": {
+            "electricity_kwh": 161236,
+            "natural_gas_m3": 1752,
+            "water_m3": 463
+          },
+          "2024-03": {
+            "electricity_kwh": 143802,
+            "natural_gas_m3": 678,
+            "water_m3": 615
+          },
+          "2024-04": {
+            "electricity_kwh": 102353,
+            "natural_gas_m3": 1966,
+            "water_m3": 628
+          },
+          "2024-05": {
+            "electricity_kwh": 112598,
+            "natural_gas_m3": 1573,
+            "water_m3": 555
+          },
+          "2024-06": {
+            "electricity_kwh": 147924,
+            "natural_gas_m3": 1029,
+            "water_m3": 598
+          },
+          "2024-07": {
+            "electricity_kwh": 162146,
+            "natural_gas_m3": 1410,
+            "water_m3": 515
+          },
+          "2024-08": {
+            "electricity_kwh": 134997,
+            "natural_gas_m3": 1755,
+            "water_m3": 810
+          },
+          "2024-09": {
+            "electricity_kwh": 138679,
+            "natural_gas_m3": 1822,
+            "water_m3": 364
+          },
+          "2024-10": {
+            "electricity_kwh": 114533,
+            "natural_gas_m3": 808,
+            "water_m3": 544
+          },
+          "2024-11": {
+            "electricity_kwh": 152108,
+            "natural_gas_m3": 1315,
+            "water_m3": 830
+          },
+          "2024-12": {
+            "electricity_kwh": 143065,
+            "natural_gas_m3": 1271,
+            "water_m3": 484
+          }
+        }
+      }
+    },
+    "B027": {
+      "basic_info": {
+        "name": "门诊大楼027号",
+        "building_type": "医疗建筑",
+        "region": "华中地区",
+        "floor_area_sqm": 29348,
+        "num_floors": 4,
+        "num_basements": 2,
+        "year_built": 1997,
+        "num_employees": 909,
+        "weekly_operating_hours": 56
+      },
+      "building_structure": {
+        "wall_construction": "砖墙",
+        "roof_construction": "瓦片屋顶",
+        "roof_type": "穹顶",
+        "building_shape": "圆形",
+        "glass_percentage": 26.3,
+        "floor_to_ceiling_height_m": 4.376813486922551
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "无供暖"
+        },
+        "cooling": {
+          "primary_type": "分体空调"
+        },
+        "water_heating": {
+          "primary_type": "集中热水系统"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": false,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 861995,
+            "natural_gas_m3": 4606,
+            "water_m3": 2146
+          },
+          "2024-02": {
+            "electricity_kwh": 794604,
+            "natural_gas_m3": 3614,
+            "water_m3": 1393
+          },
+          "2024-03": {
+            "electricity_kwh": 649939,
+            "natural_gas_m3": 3069,
+            "water_m3": 1457
+          },
+          "2024-04": {
+            "electricity_kwh": 567469,
+            "natural_gas_m3": 2522,
+            "water_m3": 2220
+          },
+          "2024-05": {
+            "electricity_kwh": 478314,
+            "natural_gas_m3": 1777,
+            "water_m3": 1613
+          },
+          "2024-06": {
+            "electricity_kwh": 624786,
+            "natural_gas_m3": 3954,
+            "water_m3": 1114
+          },
+          "2024-07": {
+            "electricity_kwh": 878112,
+            "natural_gas_m3": 3600,
+            "water_m3": 1871
+          },
+          "2024-08": {
+            "electricity_kwh": 841852,
+            "natural_gas_m3": 2287,
+            "water_m3": 596
+          },
+          "2024-09": {
+            "electricity_kwh": 677576,
+            "natural_gas_m3": 4240,
+            "water_m3": 920
+          },
+          "2024-10": {
+            "electricity_kwh": 563216,
+            "natural_gas_m3": 3072,
+            "water_m3": 1093
+          },
+          "2024-11": {
+            "electricity_kwh": 585147,
+            "natural_gas_m3": 4997,
+            "water_m3": 989
+          },
+          "2024-12": {
+            "electricity_kwh": 874357,
+            "natural_gas_m3": 5122,
+            "water_m3": 1046
+          }
+        }
+      }
+    },
+    "B028": {
+      "basic_info": {
+        "name": "医院住院楼028栋",
+        "building_type": "医疗建筑",
+        "region": "东北地区",
+        "floor_area_sqm": 21868,
+        "num_floors": 10,
+        "num_basements": 0,
+        "year_built": 2005,
+        "num_employees": 765,
+        "weekly_operating_hours": 57
+      },
+      "building_structure": {
+        "wall_construction": "混凝土",
+        "roof_construction": "绿色屋顶",
+        "roof_type": "穹顶",
+        "building_shape": "圆形",
+        "glass_percentage": 30.9,
+        "floor_to_ceiling_height_m": 4.391982053427456
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "天然气锅炉"
+        },
+        "cooling": {
+          "primary_type": "分体空调"
+        },
+        "water_heating": {
+          "primary_type": "集中热水系统"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 917907,
+            "natural_gas_m3": 12331,
+            "water_m3": 468
+          },
+          "2024-02": {
+            "electricity_kwh": 1009797,
+            "natural_gas_m3": 13052,
+            "water_m3": 736
+          },
+          "2024-03": {
+            "electricity_kwh": 793191,
+            "natural_gas_m3": 18350,
+            "water_m3": 1011
+          },
+          "2024-04": {
+            "electricity_kwh": 588734,
+            "natural_gas_m3": 2808,
+            "water_m3": 628
+          },
+          "2024-05": {
+            "electricity_kwh": 592247,
+            "natural_gas_m3": 2424,
+            "water_m3": 976
+          },
+          "2024-06": {
+            "electricity_kwh": 825874,
+            "natural_gas_m3": 3644,
+            "water_m3": 590
+          },
+          "2024-07": {
+            "electricity_kwh": 939470,
+            "natural_gas_m3": 3255,
+            "water_m3": 702
+          },
+          "2024-08": {
+            "electricity_kwh": 915332,
+            "natural_gas_m3": 2660,
+            "water_m3": 467
+          },
+          "2024-09": {
+            "electricity_kwh": 665051,
+            "natural_gas_m3": 1249,
+            "water_m3": 1057
+          },
+          "2024-10": {
+            "electricity_kwh": 562301,
+            "natural_gas_m3": 2748,
+            "water_m3": 588
+          },
+          "2024-11": {
+            "electricity_kwh": 639153,
+            "natural_gas_m3": 14770,
+            "water_m3": 872
+          },
+          "2024-12": {
+            "electricity_kwh": 770113,
+            "natural_gas_m3": 14383,
+            "water_m3": 1123
+          }
+        }
+      }
+    },
+    "B029": {
+      "basic_info": {
+        "name": "门诊大楼029号",
+        "building_type": "医疗建筑",
+        "region": "东北地区",
+        "floor_area_sqm": 26927,
+        "num_floors": 5,
+        "num_basements": 0,
+        "year_built": 2009,
+        "num_employees": 834,
+        "weekly_operating_hours": 39
+      },
+      "building_structure": {
+        "wall_construction": "玻璃幕墙",
+        "roof_construction": "玻璃顶",
+        "roof_type": "锯齿形",
+        "building_shape": "矩形",
+        "glass_percentage": 27.8,
+        "floor_to_ceiling_height_m": 3.018442975169231
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "天然气锅炉"
+        },
+        "cooling": {
+          "primary_type": "中央空调"
+        },
+        "water_heating": {
+          "primary_type": "电热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 1083931,
+            "natural_gas_m3": 15048,
+            "water_m3": 1497
+          },
+          "2024-02": {
+            "electricity_kwh": 1189038,
+            "natural_gas_m3": 32049,
+            "water_m3": 1858
+          },
+          "2024-03": {
+            "electricity_kwh": 910477,
+            "natural_gas_m3": 21288,
+            "water_m3": 997
+          },
+          "2024-04": {
+            "electricity_kwh": 718217,
+            "natural_gas_m3": 1682,
+            "water_m3": 1364
+          },
+          "2024-05": {
+            "electricity_kwh": 649525,
+            "natural_gas_m3": 5380,
+            "water_m3": 906
+          },
+          "2024-06": {
+            "electricity_kwh": 905294,
+            "natural_gas_m3": 3196,
+            "water_m3": 1288
+          },
+          "2024-07": {
+            "electricity_kwh": 1029610,
+            "natural_gas_m3": 4517,
+            "water_m3": 1125
+          },
+          "2024-08": {
+            "electricity_kwh": 1134645,
+            "natural_gas_m3": 4937,
+            "water_m3": 1637
+          },
+          "2024-09": {
+            "electricity_kwh": 847496,
+            "natural_gas_m3": 4972,
+            "water_m3": 2133
+          },
+          "2024-10": {
+            "electricity_kwh": 666892,
+            "natural_gas_m3": 2501,
+            "water_m3": 1609
+          },
+          "2024-11": {
+            "electricity_kwh": 790864,
+            "natural_gas_m3": 31083,
+            "water_m3": 1938
+          },
+          "2024-12": {
+            "electricity_kwh": 978483,
+            "natural_gas_m3": 29013,
+            "water_m3": 2013
+          }
+        }
+      }
+    },
+    "B030": {
+      "basic_info": {
+        "name": "商业综合体030栋",
+        "building_type": "商业建筑",
+        "region": "东北地区",
+        "floor_area_sqm": 47079,
+        "num_floors": 2,
+        "num_basements": 1,
+        "year_built": 1994,
+        "num_employees": 1506,
+        "weekly_operating_hours": 52
+      },
+      "building_structure": {
+        "wall_construction": "玻璃幕墙",
+        "roof_construction": "绿色屋顶",
+        "roof_type": "锯齿形",
+        "building_shape": "L形",
+        "glass_percentage": 60.5,
+        "floor_to_ceiling_height_m": 3.7597602031256403
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "集中供暖"
+        },
+        "cooling": {
+          "primary_type": "VRV多联机"
+        },
+        "water_heating": {
+          "primary_type": "电热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 2059755,
+            "natural_gas_m3": 38188,
+            "water_m3": 2656
+          },
+          "2024-02": {
+            "electricity_kwh": 1692564,
+            "natural_gas_m3": 52475,
+            "water_m3": 1054
+          },
+          "2024-03": {
+            "electricity_kwh": 1220307,
+            "natural_gas_m3": 25250,
+            "water_m3": 1358
+          },
+          "2024-04": {
+            "electricity_kwh": 1162088,
+            "natural_gas_m3": 7401,
+            "water_m3": 3083
+          },
+          "2024-05": {
+            "electricity_kwh": 1053954,
+            "natural_gas_m3": 5665,
+            "water_m3": 2876
+          },
+          "2024-06": {
+            "electricity_kwh": 1240932,
+            "natural_gas_m3": 3313,
+            "water_m3": 1837
+          },
+          "2024-07": {
+            "electricity_kwh": 1860592,
+            "natural_gas_m3": 3944,
+            "water_m3": 992
+          },
+          "2024-08": {
+            "electricity_kwh": 1590388,
+            "natural_gas_m3": 3611,
+            "water_m3": 2083
+          },
+          "2024-09": {
+            "electricity_kwh": 1265331,
+            "natural_gas_m3": 8045,
+            "water_m3": 1827
+          },
+          "2024-10": {
+            "electricity_kwh": 1091117,
+            "natural_gas_m3": 7618,
+            "water_m3": 2402
+          },
+          "2024-11": {
+            "electricity_kwh": 1303240,
+            "natural_gas_m3": 53966,
+            "water_m3": 2443
+          },
+          "2024-12": {
+            "electricity_kwh": 1725810,
+            "natural_gas_m3": 48577,
+            "water_m3": 3390
+          }
+        }
+      }
+    },
+    "B031": {
+      "basic_info": {
+        "name": "超市大楼031",
+        "building_type": "商业建筑",
+        "region": "华东地区",
+        "floor_area_sqm": 10441,
+        "num_floors": 6,
+        "num_basements": 1,
+        "year_built": 2008,
+        "num_employees": 302,
+        "weekly_operating_hours": 50
+      },
+      "building_structure": {
+        "wall_construction": "玻璃幕墙",
+        "roof_construction": "瓦片屋顶",
+        "roof_type": "锯齿形",
+        "building_shape": "L形",
+        "glass_percentage": 58.8,
+        "floor_to_ceiling_height_m": 3.3023047007652067
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "无供暖"
+        },
+        "cooling": {
+          "primary_type": "冷水机组"
+        },
+        "water_heating": {
+          "primary_type": "无集中热水"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": false,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 294189,
+            "natural_gas_m3": 664,
+            "water_m3": 283
+          },
+          "2024-02": {
+            "electricity_kwh": 236961,
+            "natural_gas_m3": 1393,
+            "water_m3": 606
+          },
+          "2024-03": {
+            "electricity_kwh": 180099,
+            "natural_gas_m3": 1737,
+            "water_m3": 626
+          },
+          "2024-04": {
+            "electricity_kwh": 187463,
+            "natural_gas_m3": 1647,
+            "water_m3": 810
+          },
+          "2024-05": {
+            "electricity_kwh": 164387,
+            "natural_gas_m3": 945,
+            "water_m3": 696
+          },
+          "2024-06": {
+            "electricity_kwh": 189074,
+            "natural_gas_m3": 669,
+            "water_m3": 677
+          },
+          "2024-07": {
+            "electricity_kwh": 237015,
+            "natural_gas_m3": 1917,
+            "water_m3": 448
+          },
+          "2024-08": {
+            "electricity_kwh": 233423,
+            "natural_gas_m3": 1194,
+            "water_m3": 495
+          },
+          "2024-09": {
+            "electricity_kwh": 187006,
+            "natural_gas_m3": 1620,
+            "water_m3": 721
+          },
+          "2024-10": {
+            "electricity_kwh": 165070,
+            "natural_gas_m3": 529,
+            "water_m3": 396
+          },
+          "2024-11": {
+            "electricity_kwh": 172635,
+            "natural_gas_m3": 1426,
+            "water_m3": 772
+          },
+          "2024-12": {
+            "electricity_kwh": 224719,
+            "natural_gas_m3": 1881,
+            "water_m3": 757
+          }
+        }
+      }
+    },
+    "B032": {
+      "basic_info": {
+        "name": "商业街032号楼",
+        "building_type": "商业建筑",
+        "region": "北方地区",
+        "floor_area_sqm": 83792,
+        "num_floors": 7,
+        "num_basements": 1,
+        "year_built": 2020,
+        "num_employees": 1592,
+        "weekly_operating_hours": 31
+      },
+      "building_structure": {
+        "wall_construction": "混凝土",
+        "roof_construction": "绿色屋顶",
+        "roof_type": "坡顶",
+        "building_shape": "不规则形状",
+        "glass_percentage": 55.5,
+        "floor_to_ceiling_height_m": 3.623867115194231
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "集中供暖"
+        },
+        "cooling": {
+          "primary_type": "中央空调"
+        },
+        "water_heating": {
+          "primary_type": "集中热水系统"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 2583169,
+            "natural_gas_m3": 62651,
+            "water_m3": 4190
+          },
+          "2024-02": {
+            "electricity_kwh": 3084731,
+            "natural_gas_m3": 97039,
+            "water_m3": 2942
+          },
+          "2024-03": {
+            "electricity_kwh": 2006183,
+            "natural_gas_m3": 73895,
+            "water_m3": 5005
+          },
+          "2024-04": {
+            "electricity_kwh": 1611442,
+            "natural_gas_m3": 13874,
+            "water_m3": 2248
+          },
+          "2024-05": {
+            "electricity_kwh": 1924159,
+            "natural_gas_m3": 14171,
+            "water_m3": 5551
+          },
+          "2024-06": {
+            "electricity_kwh": 2152317,
+            "natural_gas_m3": 9275,
+            "water_m3": 5196
+          },
+          "2024-07": {
+            "electricity_kwh": 2622101,
+            "natural_gas_m3": 8166,
+            "water_m3": 5626
+          },
+          "2024-08": {
+            "electricity_kwh": 2700641,
+            "natural_gas_m3": 6476,
+            "water_m3": 5708
+          },
+          "2024-09": {
+            "electricity_kwh": 2000122,
+            "natural_gas_m3": 6927,
+            "water_m3": 6438
+          },
+          "2024-10": {
+            "electricity_kwh": 1453083,
+            "natural_gas_m3": 11153,
+            "water_m3": 2077
+          },
+          "2024-11": {
+            "electricity_kwh": 2310583,
+            "natural_gas_m3": 65750,
+            "water_m3": 6246
+          },
+          "2024-12": {
+            "electricity_kwh": 2482191,
+            "natural_gas_m3": 51849,
+            "water_m3": 6430
+          }
+        }
+      }
+    },
+    "B033": {
+      "basic_info": {
+        "name": "商业综合体033栋",
+        "building_type": "商业建筑",
+        "region": "南方地区",
+        "floor_area_sqm": 72925,
+        "num_floors": 5,
+        "num_basements": 2,
+        "year_built": 2017,
+        "num_employees": 1093,
+        "weekly_operating_hours": 31
+      },
+      "building_structure": {
+        "wall_construction": "玻璃幕墙",
+        "roof_construction": "瓦片屋顶",
+        "roof_type": "坡顶",
+        "building_shape": "圆形",
+        "glass_percentage": 55.5,
+        "floor_to_ceiling_height_m": 3.6432137416490216
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "电采暖"
+        },
+        "cooling": {
+          "primary_type": "VRV多联机"
+        },
+        "water_heating": {
+          "primary_type": "集中热水系统"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": false,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 1798599,
+            "natural_gas_m3": 10221,
+            "water_m3": 4576
+          },
+          "2024-02": {
+            "electricity_kwh": 1551713,
+            "natural_gas_m3": 10822,
+            "water_m3": 1841
+          },
+          "2024-03": {
+            "electricity_kwh": 1279658,
+            "natural_gas_m3": 12562,
+            "water_m3": 4404
+          },
+          "2024-04": {
+            "electricity_kwh": 1055389,
+            "natural_gas_m3": 12788,
+            "water_m3": 1922
+          },
+          "2024-05": {
+            "electricity_kwh": 936534,
+            "natural_gas_m3": 9624,
+            "water_m3": 5365
+          },
+          "2024-06": {
+            "electricity_kwh": 1178982,
+            "natural_gas_m3": 11288,
+            "water_m3": 2602
+          },
+          "2024-07": {
+            "electricity_kwh": 1507491,
+            "natural_gas_m3": 9379,
+            "water_m3": 2081
+          },
+          "2024-08": {
+            "electricity_kwh": 1633448,
+            "natural_gas_m3": 10569,
+            "water_m3": 2623
+          },
+          "2024-09": {
+            "electricity_kwh": 1072330,
+            "natural_gas_m3": 8430,
+            "water_m3": 2646
+          },
+          "2024-10": {
+            "electricity_kwh": 1021851,
+            "natural_gas_m3": 7493,
+            "water_m3": 3114
+          },
+          "2024-11": {
+            "electricity_kwh": 1086123,
+            "natural_gas_m3": 4846,
+            "water_m3": 3772
+          },
+          "2024-12": {
+            "electricity_kwh": 1797382,
+            "natural_gas_m3": 3843,
+            "water_m3": 1618
+          }
+        }
+      }
+    },
+    "B034": {
+      "basic_info": {
+        "name": "快捷酒店034号",
+        "building_type": "酒店建筑",
+        "region": "华中地区",
+        "floor_area_sqm": 16584,
+        "num_floors": 15,
+        "num_basements": 0,
+        "year_built": 2010,
+        "num_employees": 447,
+        "weekly_operating_hours": 53
+      },
+      "building_structure": {
+        "wall_construction": "混凝土",
+        "roof_construction": "玻璃顶",
+        "roof_type": "平顶",
+        "building_shape": "圆形",
+        "glass_percentage": 42.5,
+        "floor_to_ceiling_height_m": 3.9746807455550717
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "热泵"
+        },
+        "cooling": {
+          "primary_type": "冷水机组"
+        },
+        "water_heating": {
+          "primary_type": "无集中热水"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 417604,
+            "natural_gas_m3": 2815,
+            "water_m3": 990
+          },
+          "2024-02": {
+            "electricity_kwh": 334510,
+            "natural_gas_m3": 1998,
+            "water_m3": 1325
+          },
+          "2024-03": {
+            "electricity_kwh": 332980,
+            "natural_gas_m3": 3100,
+            "water_m3": 1247
+          },
+          "2024-04": {
+            "electricity_kwh": 277088,
+            "natural_gas_m3": 2197,
+            "water_m3": 372
+          },
+          "2024-05": {
+            "electricity_kwh": 210780,
+            "natural_gas_m3": 1253,
+            "water_m3": 656
+          },
+          "2024-06": {
+            "electricity_kwh": 313872,
+            "natural_gas_m3": 1026,
+            "water_m3": 572
+          },
+          "2024-07": {
+            "electricity_kwh": 399667,
+            "natural_gas_m3": 1397,
+            "water_m3": 1187
+          },
+          "2024-08": {
+            "electricity_kwh": 390735,
+            "natural_gas_m3": 1733,
+            "water_m3": 963
+          },
+          "2024-09": {
+            "electricity_kwh": 268325,
+            "natural_gas_m3": 1851,
+            "water_m3": 370
+          },
+          "2024-10": {
+            "electricity_kwh": 266473,
+            "natural_gas_m3": 1611,
+            "water_m3": 1119
+          },
+          "2024-11": {
+            "electricity_kwh": 347441,
+            "natural_gas_m3": 1059,
+            "water_m3": 807
+          },
+          "2024-12": {
+            "electricity_kwh": 342168,
+            "natural_gas_m3": 1993,
+            "water_m3": 1074
+          }
+        }
+      }
+    },
+    "B035": {
+      "basic_info": {
+        "name": "会议酒店035",
+        "building_type": "酒店建筑",
+        "region": "华中地区",
+        "floor_area_sqm": 14150,
+        "num_floors": 10,
+        "num_basements": 2,
+        "year_built": 2017,
+        "num_employees": 212,
+        "weekly_operating_hours": 60
+      },
+      "building_structure": {
+        "wall_construction": "玻璃幕墙",
+        "roof_construction": "金属屋面",
+        "roof_type": "穹顶",
+        "building_shape": "圆形",
+        "glass_percentage": 52.8,
+        "floor_to_ceiling_height_m": 3.752573856905437
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "电采暖"
+        },
+        "cooling": {
+          "primary_type": "分体空调"
+        },
+        "water_heating": {
+          "primary_type": "热泵热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": false,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 306432,
+            "natural_gas_m3": 1476,
+            "water_m3": 1106
+          },
+          "2024-02": {
+            "electricity_kwh": 365683,
+            "natural_gas_m3": 1717,
+            "water_m3": 948
+          },
+          "2024-03": {
+            "electricity_kwh": 276482,
+            "natural_gas_m3": 2396,
+            "water_m3": 419
+          },
+          "2024-04": {
+            "electricity_kwh": 199569,
+            "natural_gas_m3": 2570,
+            "water_m3": 566
+          },
+          "2024-05": {
+            "electricity_kwh": 216139,
+            "natural_gas_m3": 2189,
+            "water_m3": 638
+          },
+          "2024-06": {
+            "electricity_kwh": 237707,
+            "natural_gas_m3": 1912,
+            "water_m3": 583
+          },
+          "2024-07": {
+            "electricity_kwh": 304263,
+            "natural_gas_m3": 833,
+            "water_m3": 629
+          },
+          "2024-08": {
+            "electricity_kwh": 316908,
+            "natural_gas_m3": 883,
+            "water_m3": 857
+          },
+          "2024-09": {
+            "electricity_kwh": 216836,
+            "natural_gas_m3": 2349,
+            "water_m3": 771
+          },
+          "2024-10": {
+            "electricity_kwh": 198861,
+            "natural_gas_m3": 1298,
+            "water_m3": 674
+          },
+          "2024-11": {
+            "electricity_kwh": 295960,
+            "natural_gas_m3": 862,
+            "water_m3": 692
+          },
+          "2024-12": {
+            "electricity_kwh": 350000,
+            "natural_gas_m3": 1079,
+            "water_m3": 628
+          }
+        }
+      }
+    },
+    "B036": {
+      "basic_info": {
+        "name": "宾馆大楼036",
+        "building_type": "酒店建筑",
+        "region": "华东地区",
+        "floor_area_sqm": 22690,
+        "num_floors": 11,
+        "num_basements": 1,
+        "year_built": 1996,
+        "num_employees": 113,
+        "weekly_operating_hours": 38
+      },
+      "building_structure": {
+        "wall_construction": "混凝土",
+        "roof_construction": "绿色屋顶",
+        "roof_type": "坡顶",
+        "building_shape": "圆形",
+        "glass_percentage": 57.2,
+        "floor_to_ceiling_height_m": 3.2087236444682516
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "无供暖"
+        },
+        "cooling": {
+          "primary_type": "分体空调"
+        },
+        "water_heating": {
+          "primary_type": "热泵热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": false,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 568852,
+            "natural_gas_m3": 2770,
+            "water_m3": 741
+          },
+          "2024-02": {
+            "electricity_kwh": 540218,
+            "natural_gas_m3": 2253,
+            "water_m3": 1737
+          },
+          "2024-03": {
+            "electricity_kwh": 440868,
+            "natural_gas_m3": 2301,
+            "water_m3": 559
+          },
+          "2024-04": {
+            "electricity_kwh": 320580,
+            "natural_gas_m3": 4112,
+            "water_m3": 922
+          },
+          "2024-05": {
+            "electricity_kwh": 276838,
+            "natural_gas_m3": 1374,
+            "water_m3": 576
+          },
+          "2024-06": {
+            "electricity_kwh": 355107,
+            "natural_gas_m3": 1148,
+            "water_m3": 1200
+          },
+          "2024-07": {
+            "electricity_kwh": 489242,
+            "natural_gas_m3": 4214,
+            "water_m3": 1181
+          },
+          "2024-08": {
+            "electricity_kwh": 507103,
+            "natural_gas_m3": 1243,
+            "water_m3": 931
+          },
+          "2024-09": {
+            "electricity_kwh": 395164,
+            "natural_gas_m3": 2107,
+            "water_m3": 1725
+          },
+          "2024-10": {
+            "electricity_kwh": 334965,
+            "natural_gas_m3": 3288,
+            "water_m3": 719
+          },
+          "2024-11": {
+            "electricity_kwh": 376233,
+            "natural_gas_m3": 1676,
+            "water_m3": 1574
+          },
+          "2024-12": {
+            "electricity_kwh": 545823,
+            "natural_gas_m3": 1853,
+            "water_m3": 1486
+          }
+        }
+      }
+    },
+    "B037": {
+      "basic_info": {
+        "name": "会议酒店037",
+        "building_type": "酒店建筑",
+        "region": "西北地区",
+        "floor_area_sqm": 16783,
+        "num_floors": 7,
+        "num_basements": 0,
+        "year_built": 1994,
+        "num_employees": 251,
+        "weekly_operating_hours": 57
+      },
+      "building_structure": {
+        "wall_construction": "混凝土",
+        "roof_construction": "瓦片屋顶",
+        "roof_type": "坡顶",
+        "building_shape": "圆形",
+        "glass_percentage": 57.3,
+        "floor_to_ceiling_height_m": 3.124785269015982
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "区域供热"
+        },
+        "cooling": {
+          "primary_type": "分体空调"
+        },
+        "water_heating": {
+          "primary_type": "热泵热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 553555,
+            "natural_gas_m3": 8772,
+            "water_m3": 1213
+          },
+          "2024-02": {
+            "electricity_kwh": 535550,
+            "natural_gas_m3": 12792,
+            "water_m3": 1161
+          },
+          "2024-03": {
+            "electricity_kwh": 419218,
+            "natural_gas_m3": 19542,
+            "water_m3": 523
+          },
+          "2024-04": {
+            "electricity_kwh": 399344,
+            "natural_gas_m3": 1365,
+            "water_m3": 1160
+          },
+          "2024-05": {
+            "electricity_kwh": 347439,
+            "natural_gas_m3": 1854,
+            "water_m3": 1321
+          },
+          "2024-06": {
+            "electricity_kwh": 406322,
+            "natural_gas_m3": 2237,
+            "water_m3": 730
+          },
+          "2024-07": {
+            "electricity_kwh": 466566,
+            "natural_gas_m3": 2086,
+            "water_m3": 515
+          },
+          "2024-08": {
+            "electricity_kwh": 468047,
+            "natural_gas_m3": 2382,
+            "water_m3": 1185
+          },
+          "2024-09": {
+            "electricity_kwh": 337382,
+            "natural_gas_m3": 1965,
+            "water_m3": 1016
+          },
+          "2024-10": {
+            "electricity_kwh": 309788,
+            "natural_gas_m3": 2631,
+            "water_m3": 548
+          },
+          "2024-11": {
+            "electricity_kwh": 351233,
+            "natural_gas_m3": 18568,
+            "water_m3": 365
+          },
+          "2024-12": {
+            "electricity_kwh": 486207,
+            "natural_gas_m3": 15172,
+            "water_m3": 343
+          }
+        }
+      }
+    },
+    "B038": {
+      "basic_info": {
+        "name": "仓库038号库",
+        "building_type": "仓储建筑",
+        "region": "华东地区",
+        "floor_area_sqm": 14644,
+        "num_floors": 1,
+        "num_basements": 0,
+        "year_built": 2010,
+        "num_employees": 131,
+        "weekly_operating_hours": 51
+      },
+      "building_structure": {
+        "wall_construction": "钢结构",
+        "roof_construction": "绿色屋顶",
+        "roof_type": "坡顶",
+        "building_shape": "L形",
+        "glass_percentage": 16.7,
+        "floor_to_ceiling_height_m": 3.4311013043089593
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "天然气锅炉"
+        },
+        "cooling": {
+          "primary_type": "分体空调"
+        },
+        "water_heating": {
+          "primary_type": "热泵热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 88222,
+            "natural_gas_m3": 1472,
+            "water_m3": 906
+          },
+          "2024-02": {
+            "electricity_kwh": 74067,
+            "natural_gas_m3": 1205,
+            "water_m3": 959
+          },
+          "2024-03": {
+            "electricity_kwh": 69014,
+            "natural_gas_m3": 842,
+            "water_m3": 685
+          },
+          "2024-04": {
+            "electricity_kwh": 59917,
+            "natural_gas_m3": 2804,
+            "water_m3": 1159
+          },
+          "2024-05": {
+            "electricity_kwh": 52236,
+            "natural_gas_m3": 1891,
+            "water_m3": 301
+          },
+          "2024-06": {
+            "electricity_kwh": 57939,
+            "natural_gas_m3": 1095,
+            "water_m3": 548
+          },
+          "2024-07": {
+            "electricity_kwh": 78624,
+            "natural_gas_m3": 1043,
+            "water_m3": 346
+          },
+          "2024-08": {
+            "electricity_kwh": 79044,
+            "natural_gas_m3": 1738,
+            "water_m3": 921
+          },
+          "2024-09": {
+            "electricity_kwh": 59138,
+            "natural_gas_m3": 1962,
+            "water_m3": 921
+          },
+          "2024-10": {
+            "electricity_kwh": 44185,
+            "natural_gas_m3": 1774,
+            "water_m3": 686
+          },
+          "2024-11": {
+            "electricity_kwh": 69219,
+            "natural_gas_m3": 931,
+            "water_m3": 515
+          },
+          "2024-12": {
+            "electricity_kwh": 88278,
+            "natural_gas_m3": 1455,
+            "water_m3": 544
+          }
+        }
+      }
+    },
+    "B039": {
+      "basic_info": {
+        "name": "货运站039",
+        "building_type": "仓储建筑",
+        "region": "西南地区",
+        "floor_area_sqm": 6869,
+        "num_floors": 3,
+        "num_basements": 1,
+        "year_built": 1995,
+        "num_employees": 34,
+        "weekly_operating_hours": 45
+      },
+      "building_structure": {
+        "wall_construction": "复合结构",
+        "roof_construction": "玻璃顶",
+        "roof_type": "坡顶",
+        "building_shape": "L形",
+        "glass_percentage": 15.1,
+        "floor_to_ceiling_height_m": 4.308445634614035
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "热泵"
+        },
+        "cooling": {
+          "primary_type": "VRV多联机"
+        },
+        "water_heating": {
+          "primary_type": "热泵热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 35746,
+            "natural_gas_m3": 1071,
+            "water_m3": 246
+          },
+          "2024-02": {
+            "electricity_kwh": 30264,
+            "natural_gas_m3": 1002,
+            "water_m3": 228
+          },
+          "2024-03": {
+            "electricity_kwh": 28815,
+            "natural_gas_m3": 1278,
+            "water_m3": 374
+          },
+          "2024-04": {
+            "electricity_kwh": 25176,
+            "natural_gas_m3": 637,
+            "water_m3": 500
+          },
+          "2024-05": {
+            "electricity_kwh": 23125,
+            "natural_gas_m3": 1240,
+            "water_m3": 516
+          },
+          "2024-06": {
+            "electricity_kwh": 26936,
+            "natural_gas_m3": 1342,
+            "water_m3": 334
+          },
+          "2024-07": {
+            "electricity_kwh": 26756,
+            "natural_gas_m3": 1271,
+            "water_m3": 340
+          },
+          "2024-08": {
+            "electricity_kwh": 29158,
+            "natural_gas_m3": 1347,
+            "water_m3": 197
+          },
+          "2024-09": {
+            "electricity_kwh": 21608,
+            "natural_gas_m3": 706,
+            "water_m3": 416
+          },
+          "2024-10": {
+            "electricity_kwh": 19091,
+            "natural_gas_m3": 559,
+            "water_m3": 282
+          },
+          "2024-11": {
+            "electricity_kwh": 22448,
+            "natural_gas_m3": 673,
+            "water_m3": 516
+          },
+          "2024-12": {
+            "electricity_kwh": 28698,
+            "natural_gas_m3": 1251,
+            "water_m3": 464
+          }
+        }
+      }
+    },
+    "B040": {
+      "basic_info": {
+        "name": "冷链仓库040号",
+        "building_type": "仓储建筑",
+        "region": "南方地区",
+        "floor_area_sqm": 6797,
+        "num_floors": 1,
+        "num_basements": 0,
+        "year_built": 2003,
+        "num_employees": 13,
+        "weekly_operating_hours": 44
+      },
+      "building_structure": {
+        "wall_construction": "复合结构",
+        "roof_construction": "金属屋面",
+        "roof_type": "穹顶",
+        "building_shape": "矩形",
+        "glass_percentage": 18.3,
+        "floor_to_ceiling_height_m": 3.89796040896558
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "天然气锅炉"
+        },
+        "cooling": {
+          "primary_type": "分体空调"
+        },
+        "water_heating": {
+          "primary_type": "天然气热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 36615,
+            "natural_gas_m3": 563,
+            "water_m3": 382
+          },
+          "2024-02": {
+            "electricity_kwh": 33824,
+            "natural_gas_m3": 672,
+            "water_m3": 508
+          },
+          "2024-03": {
+            "electricity_kwh": 24821,
+            "natural_gas_m3": 968,
+            "water_m3": 283
+          },
+          "2024-04": {
+            "electricity_kwh": 23161,
+            "natural_gas_m3": 1105,
+            "water_m3": 430
+          },
+          "2024-05": {
+            "electricity_kwh": 22635,
+            "natural_gas_m3": 878,
+            "water_m3": 320
+          },
+          "2024-06": {
+            "electricity_kwh": 28205,
+            "natural_gas_m3": 684,
+            "water_m3": 222
+          },
+          "2024-07": {
+            "electricity_kwh": 29261,
+            "natural_gas_m3": 1304,
+            "water_m3": 446
+          },
+          "2024-08": {
+            "electricity_kwh": 27202,
+            "natural_gas_m3": 539,
+            "water_m3": 145
+          },
+          "2024-09": {
+            "electricity_kwh": 23722,
+            "natural_gas_m3": 784,
+            "water_m3": 438
+          },
+          "2024-10": {
+            "electricity_kwh": 18431,
+            "natural_gas_m3": 660,
+            "water_m3": 151
+          },
+          "2024-11": {
+            "electricity_kwh": 27630,
+            "natural_gas_m3": 1078,
+            "water_m3": 378
+          },
+          "2024-12": {
+            "electricity_kwh": 33082,
+            "natural_gas_m3": 1342,
+            "water_m3": 197
+          }
+        }
+      }
+    },
+    "B041": {
+      "basic_info": {
+        "name": "制造厂041楼",
+        "building_type": "工业建筑",
+        "region": "西北地区",
+        "floor_area_sqm": 15955,
+        "num_floors": 1,
+        "num_basements": 0,
+        "year_built": 2019,
+        "num_employees": 175,
+        "weekly_operating_hours": 50
+      },
+      "building_structure": {
+        "wall_construction": "钢结构",
+        "roof_construction": "瓦片屋顶",
+        "roof_type": "平顶",
+        "building_shape": "U形",
+        "glass_percentage": 7.4,
+        "floor_to_ceiling_height_m": 4.174863442986187
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "集中供暖"
+        },
+        "cooling": {
+          "primary_type": "分体空调"
+        },
+        "water_heating": {
+          "primary_type": "热泵热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 516982,
+            "natural_gas_m3": 18901,
+            "water_m3": 831
+          },
+          "2024-02": {
+            "electricity_kwh": 490203,
+            "natural_gas_m3": 8074,
+            "water_m3": 1155
+          },
+          "2024-03": {
+            "electricity_kwh": 363406,
+            "natural_gas_m3": 8745,
+            "water_m3": 491
+          },
+          "2024-04": {
+            "electricity_kwh": 326942,
+            "natural_gas_m3": 2764,
+            "water_m3": 750
+          },
+          "2024-05": {
+            "electricity_kwh": 245914,
+            "natural_gas_m3": 3189,
+            "water_m3": 838
+          },
+          "2024-06": {
+            "electricity_kwh": 419349,
+            "natural_gas_m3": 2325,
+            "water_m3": 356
+          },
+          "2024-07": {
+            "electricity_kwh": 409688,
+            "natural_gas_m3": 3085,
+            "water_m3": 744
+          },
+          "2024-08": {
+            "electricity_kwh": 417610,
+            "natural_gas_m3": 2216,
+            "water_m3": 1012
+          },
+          "2024-09": {
+            "electricity_kwh": 357995,
+            "natural_gas_m3": 2424,
+            "water_m3": 559
+          },
+          "2024-10": {
+            "electricity_kwh": 265985,
+            "natural_gas_m3": 1142,
+            "water_m3": 1113
+          },
+          "2024-11": {
+            "electricity_kwh": 321339,
+            "natural_gas_m3": 11400,
+            "water_m3": 929
+          },
+          "2024-12": {
+            "electricity_kwh": 383354,
+            "natural_gas_m3": 17932,
+            "water_m3": 611
+          }
+        }
+      }
+    },
+    "B042": {
+      "basic_info": {
+        "name": "生产车间042栋",
+        "building_type": "工业建筑",
+        "region": "西南地区",
+        "floor_area_sqm": 9966,
+        "num_floors": 1,
+        "num_basements": 0,
+        "year_built": 2017,
+        "num_employees": 438,
+        "weekly_operating_hours": 30
+      },
+      "building_structure": {
+        "wall_construction": "钢结构",
+        "roof_construction": "金属屋面",
+        "roof_type": "平顶",
+        "building_shape": "圆形",
+        "glass_percentage": 15.9,
+        "floor_to_ceiling_height_m": 3.6548271684211278
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "无供暖"
+        },
+        "cooling": {
+          "primary_type": "中央空调"
+        },
+        "water_heating": {
+          "primary_type": "无集中热水"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": false,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 174020,
+            "natural_gas_m3": 1810,
+            "water_m3": 656
+          },
+          "2024-02": {
+            "electricity_kwh": 191775,
+            "natural_gas_m3": 1144,
+            "water_m3": 674
+          },
+          "2024-03": {
+            "electricity_kwh": 130083,
+            "natural_gas_m3": 590,
+            "water_m3": 627
+          },
+          "2024-04": {
+            "electricity_kwh": 97974,
+            "natural_gas_m3": 1860,
+            "water_m3": 378
+          },
+          "2024-05": {
+            "electricity_kwh": 115932,
+            "natural_gas_m3": 1562,
+            "water_m3": 379
+          },
+          "2024-06": {
+            "electricity_kwh": 120948,
+            "natural_gas_m3": 1849,
+            "water_m3": 783
+          },
+          "2024-07": {
+            "electricity_kwh": 143679,
+            "natural_gas_m3": 1808,
+            "water_m3": 433
+          },
+          "2024-08": {
+            "electricity_kwh": 149554,
+            "natural_gas_m3": 1714,
+            "water_m3": 200
+          },
+          "2024-09": {
+            "electricity_kwh": 136205,
+            "natural_gas_m3": 1058,
+            "water_m3": 533
+          },
+          "2024-10": {
+            "electricity_kwh": 108664,
+            "natural_gas_m3": 1466,
+            "water_m3": 593
+          },
+          "2024-11": {
+            "electricity_kwh": 126898,
+            "natural_gas_m3": 1317,
+            "water_m3": 425
+          },
+          "2024-12": {
+            "electricity_kwh": 175960,
+            "natural_gas_m3": 1862,
+            "water_m3": 218
+          }
+        }
+      }
+    },
+    "B043": {
+      "basic_info": {
+        "name": "装配车间043号",
+        "building_type": "工业建筑",
+        "region": "北方地区",
+        "floor_area_sqm": 29204,
+        "num_floors": 3,
+        "num_basements": 1,
+        "year_built": 1996,
+        "num_employees": 788,
+        "weekly_operating_hours": 50
+      },
+      "building_structure": {
+        "wall_construction": "混凝土",
+        "roof_construction": "瓦片屋顶",
+        "roof_type": "穹顶",
+        "building_shape": "不规则形状",
+        "glass_percentage": 9.5,
+        "floor_to_ceiling_height_m": 3.457881367073422
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "集中供暖"
+        },
+        "cooling": {
+          "primary_type": "VRV多联机"
+        },
+        "water_heating": {
+          "primary_type": "无集中热水"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 718906,
+            "natural_gas_m3": 26365,
+            "water_m3": 1358
+          },
+          "2024-02": {
+            "electricity_kwh": 675178,
+            "natural_gas_m3": 28122,
+            "water_m3": 1105
+          },
+          "2024-03": {
+            "electricity_kwh": 685266,
+            "natural_gas_m3": 29885,
+            "water_m3": 1911
+          },
+          "2024-04": {
+            "electricity_kwh": 557093,
+            "natural_gas_m3": 5496,
+            "water_m3": 1543
+          },
+          "2024-05": {
+            "electricity_kwh": 461037,
+            "natural_gas_m3": 1921,
+            "water_m3": 1737
+          },
+          "2024-06": {
+            "electricity_kwh": 718798,
+            "natural_gas_m3": 3448,
+            "water_m3": 2258
+          },
+          "2024-07": {
+            "electricity_kwh": 799605,
+            "natural_gas_m3": 4991,
+            "water_m3": 1449
+          },
+          "2024-08": {
+            "electricity_kwh": 774073,
+            "natural_gas_m3": 3438,
+            "water_m3": 984
+          },
+          "2024-09": {
+            "electricity_kwh": 555020,
+            "natural_gas_m3": 3786,
+            "water_m3": 1946
+          },
+          "2024-10": {
+            "electricity_kwh": 438857,
+            "natural_gas_m3": 4652,
+            "water_m3": 923
+          },
+          "2024-11": {
+            "electricity_kwh": 573276,
+            "natural_gas_m3": 23169,
+            "water_m3": 987
+          },
+          "2024-12": {
+            "electricity_kwh": 795304,
+            "natural_gas_m3": 23103,
+            "water_m3": 682
+          }
+        }
+      }
+    },
+    "B044": {
+      "basic_info": {
+        "name": "工业厂房044",
+        "building_type": "工业建筑",
+        "region": "东北地区",
+        "floor_area_sqm": 37156,
+        "num_floors": 2,
+        "num_basements": 0,
+        "year_built": 1998,
+        "num_employees": 185,
+        "weekly_operating_hours": 42
+      },
+      "building_structure": {
+        "wall_construction": "钢结构",
+        "roof_construction": "瓦片屋顶",
+        "roof_type": "平顶",
+        "building_shape": "U形",
+        "glass_percentage": 10.8,
+        "floor_to_ceiling_height_m": 4.455576781834233
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "区域供热"
+        },
+        "cooling": {
+          "primary_type": "分体空调"
+        },
+        "water_heating": {
+          "primary_type": "热泵热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 1307418,
+            "natural_gas_m3": 34427,
+            "water_m3": 2435
+          },
+          "2024-02": {
+            "electricity_kwh": 1147630,
+            "natural_gas_m3": 34156,
+            "water_m3": 1354
+          },
+          "2024-03": {
+            "electricity_kwh": 821995,
+            "natural_gas_m3": 42025,
+            "water_m3": 2119
+          },
+          "2024-04": {
+            "electricity_kwh": 855838,
+            "natural_gas_m3": 7185,
+            "water_m3": 957
+          },
+          "2024-05": {
+            "electricity_kwh": 776546,
+            "natural_gas_m3": 5891,
+            "water_m3": 2306
+          },
+          "2024-06": {
+            "electricity_kwh": 975647,
+            "natural_gas_m3": 5370,
+            "water_m3": 960
+          },
+          "2024-07": {
+            "electricity_kwh": 938845,
+            "natural_gas_m3": 3492,
+            "water_m3": 2959
+          },
+          "2024-08": {
+            "electricity_kwh": 972866,
+            "natural_gas_m3": 7200,
+            "water_m3": 952
+          },
+          "2024-09": {
+            "electricity_kwh": 746751,
+            "natural_gas_m3": 2946,
+            "water_m3": 1544
+          },
+          "2024-10": {
+            "electricity_kwh": 711735,
+            "natural_gas_m3": 2896,
+            "water_m3": 2531
+          },
+          "2024-11": {
+            "electricity_kwh": 981764,
+            "natural_gas_m3": 26813,
+            "water_m3": 1295
+          },
+          "2024-12": {
+            "electricity_kwh": 1201792,
+            "natural_gas_m3": 32862,
+            "water_m3": 1131
+          }
+        }
+      }
+    },
+    "B045": {
+      "basic_info": {
+        "name": "多功能厅045",
+        "building_type": "其他建筑",
+        "region": "华东地区",
+        "floor_area_sqm": 4582,
+        "num_floors": 1,
+        "num_basements": 0,
+        "year_built": 1994,
+        "num_employees": 45,
+        "weekly_operating_hours": 39
+      },
+      "building_structure": {
+        "wall_construction": "复合结构",
+        "roof_construction": "绿色屋顶",
+        "roof_type": "平顶",
+        "building_shape": "U形",
+        "glass_percentage": 29.0,
+        "floor_to_ceiling_height_m": 4.032053391917655
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "热泵"
+        },
+        "cooling": {
+          "primary_type": "分体空调"
+        },
+        "water_heating": {
+          "primary_type": "热泵热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 46182,
+            "natural_gas_m3": 789,
+            "water_m3": 245
+          },
+          "2024-02": {
+            "electricity_kwh": 50888,
+            "natural_gas_m3": 747,
+            "water_m3": 243
+          },
+          "2024-03": {
+            "electricity_kwh": 36759,
+            "natural_gas_m3": 789,
+            "water_m3": 215
+          },
+          "2024-04": {
+            "electricity_kwh": 34454,
+            "natural_gas_m3": 419,
+            "water_m3": 95
+          },
+          "2024-05": {
+            "electricity_kwh": 29300,
+            "natural_gas_m3": 338,
+            "water_m3": 185
+          },
+          "2024-06": {
+            "electricity_kwh": 41700,
+            "natural_gas_m3": 542,
+            "water_m3": 203
+          },
+          "2024-07": {
+            "electricity_kwh": 41890,
+            "natural_gas_m3": 532,
+            "water_m3": 296
+          },
+          "2024-08": {
+            "electricity_kwh": 43701,
+            "natural_gas_m3": 390,
+            "water_m3": 132
+          },
+          "2024-09": {
+            "electricity_kwh": 36810,
+            "natural_gas_m3": 683,
+            "water_m3": 336
+          },
+          "2024-10": {
+            "electricity_kwh": 31433,
+            "natural_gas_m3": 703,
+            "water_m3": 239
+          },
+          "2024-11": {
+            "electricity_kwh": 45462,
+            "natural_gas_m3": 802,
+            "water_m3": 305
+          },
+          "2024-12": {
+            "electricity_kwh": 55966,
+            "natural_gas_m3": 713,
+            "water_m3": 318
+          }
+        }
+      }
+    },
+    "B046": {
+      "basic_info": {
+        "name": "管理中心046",
+        "building_type": "其他建筑",
+        "region": "东北地区",
+        "floor_area_sqm": 2225,
+        "num_floors": 2,
+        "num_basements": 0,
+        "year_built": 2017,
+        "num_employees": 64,
+        "weekly_operating_hours": 59
+      },
+      "building_structure": {
+        "wall_construction": "玻璃幕墙",
+        "roof_construction": "混凝土平顶",
+        "roof_type": "坡顶",
+        "building_shape": "矩形",
+        "glass_percentage": 18.3,
+        "floor_to_ceiling_height_m": 2.996684356018359
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "区域供热"
+        },
+        "cooling": {
+          "primary_type": "中央空调"
+        },
+        "water_heating": {
+          "primary_type": "集中热水系统"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 43040,
+            "natural_gas_m3": 1641,
+            "water_m3": 171
+          },
+          "2024-02": {
+            "electricity_kwh": 36067,
+            "natural_gas_m3": 2546,
+            "water_m3": 128
+          },
+          "2024-03": {
+            "electricity_kwh": 31658,
+            "natural_gas_m3": 1952,
+            "water_m3": 122
+          },
+          "2024-04": {
+            "electricity_kwh": 24111,
+            "natural_gas_m3": 443,
+            "water_m3": 134
+          },
+          "2024-05": {
+            "electricity_kwh": 20862,
+            "natural_gas_m3": 388,
+            "water_m3": 169
+          },
+          "2024-06": {
+            "electricity_kwh": 32761,
+            "natural_gas_m3": 403,
+            "water_m3": 61
+          },
+          "2024-07": {
+            "electricity_kwh": 35939,
+            "natural_gas_m3": 358,
+            "water_m3": 165
+          },
+          "2024-08": {
+            "electricity_kwh": 36877,
+            "natural_gas_m3": 295,
+            "water_m3": 137
+          },
+          "2024-09": {
+            "electricity_kwh": 27870,
+            "natural_gas_m3": 303,
+            "water_m3": 72
+          },
+          "2024-10": {
+            "electricity_kwh": 20892,
+            "natural_gas_m3": 342,
+            "water_m3": 117
+          },
+          "2024-11": {
+            "electricity_kwh": 28643,
+            "natural_gas_m3": 2418,
+            "water_m3": 53
+          },
+          "2024-12": {
+            "electricity_kwh": 33228,
+            "natural_gas_m3": 1153,
+            "water_m3": 161
+          }
+        }
+      }
+    },
+    "B047": {
+      "basic_info": {
+        "name": "辅助建筑047",
+        "building_type": "其他建筑",
+        "region": "东北地区",
+        "floor_area_sqm": 2097,
+        "num_floors": 3,
+        "num_basements": 1,
+        "year_built": 2005,
+        "num_employees": 25,
+        "weekly_operating_hours": 54
+      },
+      "building_structure": {
+        "wall_construction": "木结构",
+        "roof_construction": "瓦片屋顶",
+        "roof_type": "穹顶",
+        "building_shape": "圆形",
+        "glass_percentage": 27.4,
+        "floor_to_ceiling_height_m": 4.331913318764677
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "区域供热"
+        },
+        "cooling": {
+          "primary_type": "VRV多联机"
+        },
+        "water_heating": {
+          "primary_type": "无集中热水"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 33881,
+            "natural_gas_m3": 2483,
+            "water_m3": 158
+          },
+          "2024-02": {
+            "electricity_kwh": 34706,
+            "natural_gas_m3": 1784,
+            "water_m3": 134
+          },
+          "2024-03": {
+            "electricity_kwh": 27321,
+            "natural_gas_m3": 2027,
+            "water_m3": 42
+          },
+          "2024-04": {
+            "electricity_kwh": 20742,
+            "natural_gas_m3": 290,
+            "water_m3": 105
+          },
+          "2024-05": {
+            "electricity_kwh": 19033,
+            "natural_gas_m3": 194,
+            "water_m3": 123
+          },
+          "2024-06": {
+            "electricity_kwh": 31607,
+            "natural_gas_m3": 417,
+            "water_m3": 144
+          },
+          "2024-07": {
+            "electricity_kwh": 35138,
+            "natural_gas_m3": 342,
+            "water_m3": 74
+          },
+          "2024-08": {
+            "electricity_kwh": 33294,
+            "natural_gas_m3": 417,
+            "water_m3": 157
+          },
+          "2024-09": {
+            "electricity_kwh": 24373,
+            "natural_gas_m3": 199,
+            "water_m3": 111
+          },
+          "2024-10": {
+            "electricity_kwh": 22718,
+            "natural_gas_m3": 274,
+            "water_m3": 65
+          },
+          "2024-11": {
+            "electricity_kwh": 25148,
+            "natural_gas_m3": 1365,
+            "water_m3": 64
+          },
+          "2024-12": {
+            "electricity_kwh": 33013,
+            "natural_gas_m3": 1809,
+            "water_m3": 54
+          }
+        }
+      }
+    },
+    "B048": {
+      "basic_info": {
+        "name": "综合楼048栋",
+        "building_type": "其他建筑",
+        "region": "西北地区",
+        "floor_area_sqm": 1646,
+        "num_floors": 3,
+        "num_basements": 0,
+        "year_built": 2012,
+        "num_employees": 34,
+        "weekly_operating_hours": 48
+      },
+      "building_structure": {
+        "wall_construction": "玻璃幕墙",
+        "roof_construction": "瓦片屋顶",
+        "roof_type": "穹顶",
+        "building_shape": "不规则形状",
+        "glass_percentage": 27.0,
+        "floor_to_ceiling_height_m": 2.9238538731845467
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "天然气锅炉"
+        },
+        "cooling": {
+          "primary_type": "分体空调"
+        },
+        "water_heating": {
+          "primary_type": "热泵热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 26464,
+            "natural_gas_m3": 959,
+            "water_m3": 123
+          },
+          "2024-02": {
+            "electricity_kwh": 22992,
+            "natural_gas_m3": 1842,
+            "water_m3": 75
+          },
+          "2024-03": {
+            "electricity_kwh": 22466,
+            "natural_gas_m3": 1703,
+            "water_m3": 54
+          },
+          "2024-04": {
+            "electricity_kwh": 18901,
+            "natural_gas_m3": 92,
+            "water_m3": 86
+          },
+          "2024-05": {
+            "electricity_kwh": 14569,
+            "natural_gas_m3": 90,
+            "water_m3": 38
+          },
+          "2024-06": {
+            "electricity_kwh": 21802,
+            "natural_gas_m3": 197,
+            "water_m3": 47
+          },
+          "2024-07": {
+            "electricity_kwh": 23323,
+            "natural_gas_m3": 151,
+            "water_m3": 94
+          },
+          "2024-08": {
+            "electricity_kwh": 22118,
+            "natural_gas_m3": 179,
+            "water_m3": 43
+          },
+          "2024-09": {
+            "electricity_kwh": 18829,
+            "natural_gas_m3": 250,
+            "water_m3": 111
+          },
+          "2024-10": {
+            "electricity_kwh": 14716,
+            "natural_gas_m3": 166,
+            "water_m3": 94
+          },
+          "2024-11": {
+            "electricity_kwh": 21531,
+            "natural_gas_m3": 1807,
+            "water_m3": 106
+          },
+          "2024-12": {
+            "electricity_kwh": 25996,
+            "natural_gas_m3": 1413,
+            "water_m3": 40
+          }
+        }
+      }
+    },
+    "B049": {
+      "basic_info": {
+        "name": "仓库049号库",
+        "building_type": "仓储建筑",
+        "region": "西北地区",
+        "floor_area_sqm": 1640,
+        "num_floors": 2,
+        "num_basements": 1,
+        "year_built": 2006,
+        "num_employees": 13,
+        "weekly_operating_hours": 58
+      },
+      "building_structure": {
+        "wall_construction": "钢结构",
+        "roof_construction": "绿色屋顶",
+        "roof_type": "锯齿形",
+        "building_shape": "不规则形状",
+        "glass_percentage": 13.8,
+        "floor_to_ceiling_height_m": 3.947292958795252
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "热泵"
+        },
+        "cooling": {
+          "primary_type": "VRV多联机"
+        },
+        "water_heating": {
+          "primary_type": "天然气热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 11407,
+            "natural_gas_m3": 1755,
+            "water_m3": 129
+          },
+          "2024-02": {
+            "electricity_kwh": 11160,
+            "natural_gas_m3": 1371,
+            "water_m3": 116
+          },
+          "2024-03": {
+            "electricity_kwh": 10566,
+            "natural_gas_m3": 1542,
+            "water_m3": 67
+          },
+          "2024-04": {
+            "electricity_kwh": 8834,
+            "natural_gas_m3": 101,
+            "water_m3": 83
+          },
+          "2024-05": {
+            "electricity_kwh": 8090,
+            "natural_gas_m3": 153,
+            "water_m3": 82
+          },
+          "2024-06": {
+            "electricity_kwh": 10766,
+            "natural_gas_m3": 269,
+            "water_m3": 56
+          },
+          "2024-07": {
+            "electricity_kwh": 10430,
+            "natural_gas_m3": 282,
+            "water_m3": 107
+          },
+          "2024-08": {
+            "electricity_kwh": 10655,
+            "natural_gas_m3": 87,
+            "water_m3": 70
+          },
+          "2024-09": {
+            "electricity_kwh": 8316,
+            "natural_gas_m3": 319,
+            "water_m3": 80
+          },
+          "2024-10": {
+            "electricity_kwh": 7939,
+            "natural_gas_m3": 139,
+            "water_m3": 50
+          },
+          "2024-11": {
+            "electricity_kwh": 8902,
+            "natural_gas_m3": 1899,
+            "water_m3": 75
+          },
+          "2024-12": {
+            "electricity_kwh": 13708,
+            "natural_gas_m3": 1585,
+            "water_m3": 44
+          }
+        }
+      }
+    },
+    "B050": {
+      "basic_info": {
+        "name": "疾控中心大楼050",
+        "building_type": "医疗建筑",
+        "region": "华东地区",
+        "floor_area_sqm": 18942,
+        "num_floors": 5,
+        "num_basements": 0,
+        "year_built": 2002,
+        "num_employees": 549,
+        "weekly_operating_hours": 31
+      },
+      "building_structure": {
+        "wall_construction": "复合结构",
+        "roof_construction": "绿色屋顶",
+        "roof_type": "坡顶",
+        "building_shape": "圆形",
+        "glass_percentage": 36.5,
+        "floor_to_ceiling_height_m": 3.633139809650298
+      },
+      "energy_systems": {
+        "heating": {
+          "primary_type": "天然气锅炉"
+        },
+        "cooling": {
+          "primary_type": "分体空调"
+        },
+        "water_heating": {
+          "primary_type": "热泵热水器"
+        }
+      },
+      "energy_consumption": {
+        "uses_electricity": true,
+        "uses_natural_gas": true,
+        "monthly_data": {
+          "2024-01": {
+            "electricity_kwh": 570215,
+            "natural_gas_m3": 1367,
+            "water_m3": 1161
+          },
+          "2024-02": {
+            "electricity_kwh": 566043,
+            "natural_gas_m3": 3223,
+            "water_m3": 703
+          },
+          "2024-03": {
+            "electricity_kwh": 435465,
+            "natural_gas_m3": 1618,
+            "water_m3": 1387
+          },
+          "2024-04": {
+            "electricity_kwh": 336121,
+            "natural_gas_m3": 3564,
+            "water_m3": 1078
+          },
+          "2024-05": {
+            "electricity_kwh": 350340,
+            "natural_gas_m3": 1212,
+            "water_m3": 1052
+          },
+          "2024-06": {
+            "electricity_kwh": 395630,
+            "natural_gas_m3": 1289,
+            "water_m3": 1469
+          },
+          "2024-07": {
+            "electricity_kwh": 484371,
+            "natural_gas_m3": 2661,
+            "water_m3": 1001
+          },
+          "2024-08": {
+            "electricity_kwh": 458456,
+            "natural_gas_m3": 2712,
+            "water_m3": 1178
+          },
+          "2024-09": {
+            "electricity_kwh": 422869,
+            "natural_gas_m3": 2904,
+            "water_m3": 1405
+          },
+          "2024-10": {
+            "electricity_kwh": 334775,
+            "natural_gas_m3": 3339,
+            "water_m3": 891
+          },
+          "2024-11": {
+            "electricity_kwh": 413501,
+            "natural_gas_m3": 1779,
+            "water_m3": 1428
+          },
+          "2024-12": {
+            "electricity_kwh": 566797,
+            "natural_gas_m3": 2631,
+            "water_m3": 499
+          }
+        }
+      }
+    }
+  }
+}

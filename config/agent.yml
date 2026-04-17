@@ -1,0 +1,4 @@
+# 建筑能耗数据路径
+energy_data_path: data/energy_data/buildings.json
+# 天气数据缓存
+weather_cache_path: data/weather_cache.json
