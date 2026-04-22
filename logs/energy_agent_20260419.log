@@ -1,0 +1,5 @@
+2026-04-19 18:03:50 - energy_agent - INFO - [log_before_model]即将调用模型，带有1条消息。
+2026-04-19 18:03:54 - energy_agent - INFO - [tool monitor]执行工具：calculate_carbon_reduction
+2026-04-19 18:03:54 - energy_agent - INFO - [tool monitor]传入参数：{'energy_saved': 10000, 'energy_type': 'electricity'}
+2026-04-19 18:03:54 - energy_agent - INFO - [tool monitor]工具calculate_carbon_reduction调用成功
+2026-04-19 18:03:54 - energy_agent - INFO - [log_before_model]即将调用模型，带有3条消息。
