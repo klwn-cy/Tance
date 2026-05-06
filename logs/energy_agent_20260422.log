@@ -1,0 +1,15 @@
+2026-04-22 15:00:27 - energy_agent - INFO - 加载报告: R001
+2026-04-22 15:00:27 - energy_agent - INFO - 加载报告: R002
+2026-04-22 15:00:27 - energy_agent - INFO - 加载报告: R003
+2026-04-22 15:00:27 - energy_agent - INFO - 加载报告: R004
+2026-04-22 15:00:27 - energy_agent - INFO - 加载报告: R005
+2026-04-22 15:00:27 - energy_agent - INFO - 加载报告: R006
+2026-04-22 15:00:27 - energy_agent - INFO - 加载报告: R007
+2026-04-22 15:00:27 - energy_agent - INFO - 加载报告: R008
+2026-04-22 15:00:27 - energy_agent - INFO - 加载报告: R009
+2026-04-22 15:00:27 - energy_agent - INFO - 加载报告: R010
+2026-04-22 15:05:30 - energy_agent - INFO - [log_before_model]即将调用模型，带有1条消息。
+2026-04-22 15:05:36 - energy_agent - INFO - [tool monitor]执行工具：calculate_carbon_reduction
+2026-04-22 15:05:36 - energy_agent - INFO - [tool monitor]传入参数：{'energy_saved': 10000, 'energy_type': 'electricity'}
+2026-04-22 15:05:36 - energy_agent - INFO - [tool monitor]工具calculate_carbon_reduction调用成功
+2026-04-22 15:05:36 - energy_agent - INFO - [log_before_model]即将调用模型，带有3条消息。

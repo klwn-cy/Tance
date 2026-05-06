@@ -118,6 +118,10 @@ async function loadCarbonDashboard() {
         ]);
 
         renderCarbonSummary(summaryData);
+        // 增加地图加载失败提示
+        await loadChinaGeoJson().catch(() => {
+            showToast('地图数据加载失败，仅展示图表数据', 'warning');
+        });
         renderCarbonMap(summaryData);
         renderTrendChart(trendData);
         renderSectorChart(summaryData);
@@ -134,11 +138,22 @@ async function loadCarbonDashboard() {
 async function loadChinaGeoJson() {
     if (_chinaGeoJson) return;
     try {
-        const resp = await fetch('https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json');
+        // 替换为本地map文件夹的GeoJSON路径（根据实际目录结构调整）
+        const resp = await fetch('/map/china_full.json'); 
         _chinaGeoJson = await resp.json();
         echarts.registerMap('china', _chinaGeoJson);
+        console.log('本地中国地图GeoJSON加载成功');
     } catch (e) {
-        console.error('加载中国地图 GeoJSON 失败:', e);
+        console.error('加载本地中国地图 GeoJSON 失败:', e);
+        // 降级方案：加载在线CDN（可选保留）
+        try {
+            const fallbackResp = await fetch('https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json');
+            _chinaGeoJson = await fallbackResp.json();
+            echarts.registerMap('china', _chinaGeoJson);
+            console.log('降级加载在线GeoJSON成功');
+        } catch (fallbackE) {
+            console.error('在线降级加载也失败:', fallbackE);
+        }
     }
 }
 
